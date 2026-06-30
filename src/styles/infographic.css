@@ -241,6 +241,8 @@
 }
 
 .tier-band--lime {
+  margin-top: 0.12cqw;
+  margin-bottom: 0.24cqw;
   background:
     linear-gradient(90deg, rgba(0, 0, 0, 0.95) 0 19.1cqw, rgba(2, 9, 15, 0.75) 19.1cqw 48.3cqw, transparent 48.3cqw),
     radial-gradient(ellipse at 76% 48%, rgba(var(--accent-rgb), 0.31), transparent 43%),
