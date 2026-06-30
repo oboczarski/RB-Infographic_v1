@@ -537,17 +537,20 @@
 }
 
 .dh-mark__word {
-  font-family: "Bebas Neue", "Barlow Condensed", Impact, sans-serif;
+  font-family: MuseoModerno, Inter, system-ui, sans-serif;
   font-size: 4.2cqw;
-  font-style: italic;
-  letter-spacing: 1.05cqw;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: -0.4cqw;
   line-height: 1;
   color: transparent;
   background:
-    linear-gradient(180deg, #ffffff, #dfe8ef 48%, #858c91);
+    linear-gradient(180deg, #858c91 35%, #30a6c599, #858c91 75%);
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow: 0 0 1.3cqw rgba(255, 255, 255, 0.18);
+  text-transform: lowercase;
+  padding: 2px;
 }
 
 .poster-brand-lockup {
