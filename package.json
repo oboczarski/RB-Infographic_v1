@@ -14,6 +14,7 @@
     "@fontsource/barlow-condensed": "^5.2.8",
     "@fontsource/bebas-neue": "^5.2.7",
     "@fontsource/inter": "^5.2.8",
+    "@fontsource/permanent-marker": "^5.2.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

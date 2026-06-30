@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { brandLogoAsset } from "../data/assetMap";
 import { tierDefinitions, type TierId } from "../data/tierList";
 import { DynastyHubMark } from "./DynastyHubMark";
 import { TierBand } from "./TierBand";
@@ -21,7 +22,11 @@ export function InfographicPoster() {
             <span />
           </div>
         </div>
-        <DynastyHubMark compact />
+        <img
+          className="poster-brand-logo"
+          src={brandLogoAsset.src}
+          alt="Dynasty Hub logo"
+        />
       </header>
 
       <div className="tier-stack">

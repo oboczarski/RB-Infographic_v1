@@ -1,7 +1,7 @@
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
-import { playerImageAssets, teamLogoAssets } from "../data/assetMap";
+import { brandLogoAsset, playerImageAssets, teamLogoAssets } from "../data/assetMap";
 import { players, tierDefinitions } from "../data/tierList";
 
 describe("RB tier list data", () => {
@@ -54,5 +54,9 @@ describe("RB tier list data", () => {
         `${player.team} logo should exist`,
       ).toBe(true);
     }
+
+    expect(existsSync(path.resolve(process.cwd(), brandLogoAsset.sourcePath))).toBe(
+      true,
+    );
   });
 });

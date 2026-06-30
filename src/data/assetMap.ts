@@ -16,6 +16,7 @@ import saquonImage from "../../Assets/RB-Infographic_v1-imgs/Saquon_Barkley-1_Gr
 import taylorImage from "../../Assets/RB-Infographic_v1-imgs/Taylor-1_Blue-NoBG.png";
 import walkerImage from "../../Assets/RB-Infographic_v1-imgs/WalkerIII-1_Blue-noBG.png";
 import cookImage from "../../Assets/RB-Infographic_v1-imgs/James_Cook-1_Blue-noBG.png";
+import brandLogo from "../../Assets/Brand_Logo/dh-Logo.png";
 
 import ariLogo from "../../Assets/NFL_logos_svg/ari.svg";
 import atlLogo from "../../Assets/NFL_logos_svg/atl.svg";
@@ -140,6 +141,11 @@ export const teamLogoAssets = {
   SF: { src: sfLogo, sourcePath: "Assets/NFL_logos_svg/sf.svg" },
   TB: { src: tbLogo, sourcePath: "Assets/NFL_logos_svg/tb.svg" },
 } as const satisfies Record<string, AssetReference>;
+
+export const brandLogoAsset = {
+  src: brandLogo,
+  sourcePath: "Assets/Brand_Logo/dh-Logo.png",
+} as const satisfies AssetReference;
 
 export type PlayerName = keyof typeof playerImageAssets;
 export type TeamAbbreviation = keyof typeof teamLogoAssets;
