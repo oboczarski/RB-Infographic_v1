@@ -118,8 +118,8 @@ export const players: Player[] = playerRows.map((player) => {
 });
 
 export const playerPlacements: PlayerPlacement[] = [
-  { rank: 1, x: -7, y: 0, width: 81, zIndex: 4 },
-  { rank: 2, x: -12, y: -2, width: 147, zIndex: 3 },
+  { rank: 1, x: -15, y: -15, width: 97, zIndex: 4 },
+  { rank: 2, x: -29, y: -17, width: 178, zIndex: 3 },
   { rank: 3, x: -26, y: 4, width: 84, zIndex: 6 },
   { rank: 4, x: 6, y: -20, width: 83, zIndex: 5 },
   { rank: 5, x: 5, y: 7, width: 130, zIndex: 4 },

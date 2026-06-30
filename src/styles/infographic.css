@@ -84,8 +84,8 @@
 .poster-title__rb {
   position: relative;
   display: inline-block;
-  font-family: Bangers, "Barlow Condensed", Impact, sans-serif;
-  font-size: 15.85cqw;
+  font-family: Audiowide, "Barlow Condensed", Impact, sans-serif;
+  font-size: 10.65cqw;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0;
@@ -115,9 +115,10 @@
 
 .poster-title__main {
   display: inline-block;
-  font-family: Anton, "Barlow Condensed", Impact, sans-serif;
-  font-size: 12.9cqw;
-  letter-spacing: 0.18cqw;
+  font-family: Audiowide, "Barlow Condensed", Impact, sans-serif;
+  font-size: 10.65cqw;
+  font-weight: 400;
+  letter-spacing: -5px;
   color: transparent;
   background:
     linear-gradient(180deg, #ffffff 0%, #aeb3b2 38%, #ffffff 49%, #696d70 100%);
@@ -192,7 +193,7 @@
 
 .tier-band--cyan .player-collage {
   overflow: visible;
-  clip-path: inset(-7cqw -10cqw -0.8cqw -10cqw);
+  clip-path: inset(-11cqw -13cqw -1.1cqw -13cqw);
 }
 
 .tier-band::before,
@@ -304,6 +305,7 @@
   text-shadow: 0 0 1.5cqw rgba(var(--accent-rgb), 0.34);
   transform: rotate(-4deg);
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .tier-rail__label {
@@ -318,6 +320,7 @@
   color: var(--accent);
   letter-spacing: 0.1cqw;
   text-shadow: 0 0 1.6cqw rgba(var(--accent-rgb), 0.45);
+  justify-items: center;
 }
 
 .player-list {
@@ -365,8 +368,8 @@
 }
 
 .player-list__logo-wrap {
-  width: 5.4cqw;
-  height: 5.4cqw;
+  width: 5cqw;
+  height: 5cqw;
   display: grid;
   place-items: center;
   filter:
@@ -405,8 +408,8 @@
 }
 
 .tier-band--magenta .player-list__logo-wrap {
-  width: 4.65cqw;
-  height: 4.65cqw;
+  width: 4.28cqw;
+  height: 4.28cqw;
 }
 
 .tier-band--magenta .player-list__name {
@@ -551,28 +554,33 @@
   display: grid;
   justify-items: center;
   gap: 0.12cqw;
-  margin-top: 0.85cqw;
+  margin-top: -0.85cqw;
+  margin-right: -2cqw;
 }
 
 .poster-brand-logo {
-  width: 11.4cqw;
-  height: 11.4cqw;
+  width: 9.4cqw;
+  height: 9.4cqw;
   object-fit: contain;
   filter:
-    drop-shadow(0 0 0.55cqw rgba(198, 213, 255, 0.62))
-    drop-shadow(0 0 1.8cqw rgba(16, 244, 240, 0.42));
+   brightness(1.2) 
+   saturate(6.5)  
+   drop-shadow(0 0 0px rgba(250, 250, 254, 0.91)) 
+   drop-shadow(0 0 0px rgba(35, 245, 155, 1));
 }
 
 .poster-brand-name {
   display: block;
   font-family: MuseoModerno, Inter, system-ui, sans-serif;
-  font-size: 2.18cqw;
-  font-weight: 300;
+  font-optical-sizing: auto;
+  font-size: 2.1cqw;
+  font-weight: 400;
+  font-style: normal;
   line-height: 0;
-  color: #d8e3ff;
+  color: #bdcffe;
   text-transform: lowercase;
   letter-spacing: -0.1cqw;
-  text-shadow: 0 0 0.8cqw rgba(16, 244, 240, 0.45);
+  text-shadow: 0px 0px 2px rgba(16, 244, 240, 0.95), 1px 1px 0px rgba(16, 244, 240, 0.95);
 }
 
 @media (max-width: 720px) {
