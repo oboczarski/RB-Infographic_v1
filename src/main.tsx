@@ -1,9 +1,16 @@
 import "@fontsource/inter/400.css";
+import "@fontsource/google-sans/latin-400.css";
+import "@fontsource/google-sans/latin-500.css";
+import "@fontsource/google-sans/latin-700.css";
 import "@fontsource/barlow-condensed/500.css";
 import "@fontsource/barlow-condensed/600.css";
 import "@fontsource/barlow-condensed/700.css";
 import "@fontsource/bebas-neue";
 import "@fontsource/permanent-marker";
+import "@fontsource/museomoderno/latin-300.css";
+import "@fontsource/bangers/latin-400.css";
+import "@fontsource/anton/latin-400.css";
+import "@fontsource/tourney/latin-600.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";

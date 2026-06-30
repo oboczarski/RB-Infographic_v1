@@ -76,7 +76,7 @@
   margin: 0;
   display: flex;
   align-items: flex-start;
-  gap: 1.35cqw;
+  gap: 2.15cqw;
   white-space: nowrap;
   line-height: 0.82;
 }
@@ -84,12 +84,12 @@
 .poster-title__rb {
   position: relative;
   display: inline-block;
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: 17.1cqw;
-  font-weight: 700;
-  font-style: italic;
+  font-family: Bangers, "Barlow Condensed", Impact, sans-serif;
+  font-size: 15.85cqw;
+  font-weight: 400;
+  font-style: normal;
   letter-spacing: 0;
-  transform: skewX(-11deg) translateY(0.35cqw);
+  transform: skewX(-9deg) translateY(0.45cqw);
   color: transparent;
   background:
     linear-gradient(130deg, #14fff4 0%, #06d5d4 50%, #7bfff7 52%, #0cb6c2 100%);
@@ -115,9 +115,9 @@
 
 .poster-title__main {
   display: inline-block;
-  font-family: "Bebas Neue", "Barlow Condensed", Impact, sans-serif;
-  font-size: 14.25cqw;
-  letter-spacing: 0.1cqw;
+  font-family: Anton, "Barlow Condensed", Impact, sans-serif;
+  font-size: 12.9cqw;
+  letter-spacing: 0.18cqw;
   color: transparent;
   background:
     linear-gradient(180deg, #ffffff 0%, #aeb3b2 38%, #ffffff 49%, #696d70 100%);
@@ -136,11 +136,11 @@
   width: fit-content;
   margin: 0.55cqw 0 0 20.8cqw;
   color: #18f6ef;
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: 3.2cqw;
-  font-style: italic;
-  font-weight: 700;
-  letter-spacing: 1.2cqw;
+  font-family: Tourney, "Barlow Condensed", Impact, sans-serif;
+  font-size: 2.95cqw;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.92cqw;
 }
 
 .poster-subtitle span {
@@ -155,7 +155,7 @@
   top: 19.7cqw;
   left: 1.5cqw;
   right: 1.5cqw;
-  bottom: 5.7cqw;
+  bottom: 10.3cqw;
   display: grid;
   grid-template-rows: 1.03fr 1.15fr 0.98fr 0.94fr 1.1fr;
   gap: 0.68cqw;
@@ -183,6 +183,16 @@
     filter 180ms ease,
     transform 180ms ease,
     box-shadow 180ms ease;
+}
+
+.tier-band--cyan {
+  z-index: 5;
+  overflow: visible;
+}
+
+.tier-band--cyan .player-collage {
+  overflow: visible;
+  clip-path: inset(-7cqw -10cqw -0.8cqw -10cqw);
 }
 
 .tier-band::before,
@@ -270,7 +280,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1.4cqw 1.45cqw 1.25cqw 2cqw;
+  padding: 1.1cqw 1.45cqw 1.05cqw 2cqw;
   border-right: 0.1cqw solid rgba(var(--accent-rgb), 0.8);
   background:
     linear-gradient(135deg, rgba(var(--accent-rgb), 0.14), transparent 36%),
@@ -293,20 +303,20 @@
   background-clip: text;
   text-shadow: 0 0 1.5cqw rgba(var(--accent-rgb), 0.34);
   transform: rotate(-4deg);
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.02em;
 }
 
 .tier-rail__label {
   display: grid;
   gap: 0.15cqw;
-  margin-top: 1cqw;
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: 3.45cqw;
-  font-style: italic;
+  margin-top: 0.45cqw;
+  font-family: "Google Sans", Inter, system-ui, sans-serif;
+  font-size: 2.45cqw;
+  font-style: normal;
   font-weight: 700;
-  line-height: 0.95;
+  line-height: 1.04;
   color: var(--accent);
-  letter-spacing: 0.25cqw;
+  letter-spacing: 0.1cqw;
   text-shadow: 0 0 1.6cqw rgba(var(--accent-rgb), 0.45);
 }
 
@@ -315,7 +325,7 @@
   grid-template-rows: repeat(var(--player-count), minmax(0, 1fr));
   align-items: stretch;
   margin: 0;
-  padding: 1.65cqw 0.9cqw 1.65cqw 1.35cqw;
+  padding: 1.2cqw 0.9cqw 1.2cqw 1.35cqw;
   list-style: none;
   background:
     linear-gradient(90deg, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.02)),
@@ -373,10 +383,10 @@
 .player-list__name {
   min-width: 0;
   color: #f9fbff;
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: 2.68cqw;
-  font-weight: 600;
-  line-height: 0.92;
+  font-family: "Google Sans", Inter, system-ui, sans-serif;
+  font-size: 2.12cqw;
+  font-weight: 700;
+  line-height: 1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip;
@@ -386,8 +396,8 @@
 }
 
 .tier-band--magenta .player-list {
-  padding-top: 0.85cqw;
-  padding-bottom: 0.9cqw;
+  padding-top: 0.68cqw;
+  padding-bottom: 0.7cqw;
 }
 
 .tier-band--magenta .player-list__row {
@@ -400,7 +410,7 @@
 }
 
 .tier-band--magenta .player-list__name {
-  font-size: 2.16cqw;
+  font-size: 1.68cqw;
 }
 
 .player-collage {
@@ -536,15 +546,33 @@
   text-shadow: 0 0 1.3cqw rgba(255, 255, 255, 0.18);
 }
 
-.poster-brand-logo {
+.poster-brand-lockup {
   justify-self: end;
+  display: grid;
+  justify-items: center;
+  gap: 0.12cqw;
+  margin-top: 0.85cqw;
+}
+
+.poster-brand-logo {
   width: 11.4cqw;
   height: 11.4cqw;
   object-fit: contain;
-  margin-top: 1.25cqw;
   filter:
     drop-shadow(0 0 0.55cqw rgba(198, 213, 255, 0.62))
     drop-shadow(0 0 1.8cqw rgba(16, 244, 240, 0.42));
+}
+
+.poster-brand-name {
+  display: block;
+  font-family: MuseoModerno, Inter, system-ui, sans-serif;
+  font-size: 2.18cqw;
+  font-weight: 300;
+  line-height: 0;
+  color: #d8e3ff;
+  text-transform: lowercase;
+  letter-spacing: -0.1cqw;
+  text-shadow: 0 0 0.8cqw rgba(16, 244, 240, 0.45);
 }
 
 @media (max-width: 720px) {

@@ -22,11 +22,14 @@ export function InfographicPoster() {
             <span />
           </div>
         </div>
-        <img
-          className="poster-brand-logo"
-          src={brandLogoAsset.src}
-          alt="Dynasty Hub logo"
-        />
+        <div className="poster-brand-lockup">
+          <img
+            className="poster-brand-logo"
+            src={brandLogoAsset.src}
+            alt="Dynasty Hub logo"
+          />
+          <span className="poster-brand-name">dynasty hub</span>
+        </div>
       </header>
 
       <div className="tier-stack">
