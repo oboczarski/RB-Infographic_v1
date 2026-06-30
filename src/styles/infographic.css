@@ -58,7 +58,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 19.6cqw;
+  height: 16.1cqw;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 15.5cqw;
   align-items: start;
@@ -84,7 +84,7 @@
 .poster-title__rb {
   position: relative;
   display: inline-block;
-  font-family: Audiowide, "Barlow Condensed", Impact, sans-serif;
+  font-family: Mogra, "Barlow Condensed", Impact, sans-serif;
   font-size: 10.65cqw;
   font-weight: 400;
   font-style: normal;
@@ -118,7 +118,7 @@
   font-family: Audiowide, "Barlow Condensed", Impact, sans-serif;
   font-size: 10.65cqw;
   font-weight: 400;
-  letter-spacing: -5px;
+  letter-spacing: 0;
   color: transparent;
   background:
     linear-gradient(180deg, #ffffff 0%, #aeb3b2 38%, #ffffff 49%, #696d70 100%);
@@ -153,10 +153,10 @@
 .tier-stack {
   position: absolute;
   z-index: 2;
-  top: 19.7cqw;
+  top: 15.85cqw;
   left: 1.5cqw;
   right: 1.5cqw;
-  bottom: 10.3cqw;
+  bottom: 14.15cqw;
   display: grid;
   grid-template-rows: 1.03fr 1.15fr 0.98fr 0.94fr 1.1fr;
   gap: 0.68cqw;
@@ -383,6 +383,30 @@
   object-fit: contain;
 }
 
+.tier-band--cyan .player-list__row {
+  grid-template-columns: 6.75cqw minmax(0, 1fr);
+}
+
+.tier-band--cyan .player-list__logo-wrap {
+  width: 5.78cqw;
+  height: 5.78cqw;
+}
+
+.tier-band--cyan .player-list__name {
+  font-size: 2.38cqw;
+}
+
+.tier-band--blue .player-list__logo-wrap,
+.tier-band--violet .player-list__logo-wrap {
+  width: 4.72cqw;
+  height: 4.72cqw;
+}
+
+.tier-band--blue .player-list__name,
+.tier-band--violet .player-list__name {
+  font-size: 1.98cqw;
+}
+
 .player-list__name {
   min-width: 0;
   color: #f9fbff;
@@ -408,8 +432,8 @@
 }
 
 .tier-band--magenta .player-list__logo-wrap {
-  width: 4.28cqw;
-  height: 4.28cqw;
+  width: 4cqw;
+  height: 4cqw;
 }
 
 .tier-band--magenta .player-list__name {
@@ -507,32 +531,6 @@
   align-items: center;
   gap: 1.35cqw;
   color: #fff;
-}
-
-.dh-mark__hex {
-  position: relative;
-  width: 4.5cqw;
-  aspect-ratio: 0.9;
-  display: grid;
-  place-items: center;
-  color: #13f8f0;
-  font-family: Inter, system-ui, sans-serif;
-  font-size: 1.45cqw;
-  font-weight: 700;
-  letter-spacing: 0;
-  text-transform: lowercase;
-  border: 0.22cqw solid currentColor;
-  clip-path: polygon(50% 0, 94% 24%, 94% 76%, 50% 100%, 6% 76%, 6% 24%);
-  filter: drop-shadow(0 0 1.1cqw rgba(16, 244, 240, 0.84));
-}
-
-.dh-mark__hex span {
-  display: inline-block;
-  transform: translateY(-0.08cqw);
-}
-
-.dh-mark__hex span + span {
-  margin-left: -0.16cqw;
 }
 
 .dh-mark__word {
