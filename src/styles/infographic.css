@@ -84,18 +84,21 @@
 .poster-title__rb {
   position: relative;
   display: inline-block;
-  font-family: Mogra, "Barlow Condensed", Impact, sans-serif;
-  font-size: 10.65cqw;
+  font-family: Audiowide, "Barlow Condensed", Impact, sans-serif;
+  font-size: 10.75cqw;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0;
   transform: skewX(-9deg) translateY(0.45cqw);
   color: transparent;
   background:
-    linear-gradient(130deg, #14fff4 0%, #06d5d4 50%, #7bfff7 52%, #0cb6c2 100%);
+    linear-gradient(130deg, #82fff1 0%, #06d5d4 50%, #7bfff7 52%, #0cffec 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  filter: drop-shadow(0 0 1.7cqw rgba(16, 244, 240, 0.38));
+  filter: drop-shadow(0 15px 3cqw rgba(16, 244, 240, 0.38));
+  text-shadow: 5px 5px 7px #3348;
+  margin-bottom: 2px;
+  margin-top: -4px;
 }
 
 .poster-title__rb::after {
@@ -110,7 +113,7 @@
   box-shadow:
     0 2.1cqw 0 rgba(0, 0, 0, 0.34),
     0 -2.2cqw 0 rgba(255, 255, 255, 0.08);
-  opacity: 0.7;
+  opacity: 0.1;
 }
 
 .poster-title__main {
@@ -552,33 +555,34 @@
   display: grid;
   justify-items: center;
   gap: 0.12cqw;
-  margin-top: -0.85cqw;
-  margin-right: -2cqw;
+  margin-top: -0.05cqw;
+  margin-right: -2.5cqw;
 }
 
 .poster-brand-logo {
-  width: 9.4cqw;
-  height: 9.4cqw;
+  width: 8.4cqw;
+  height: 8.4cqw;
   object-fit: contain;
   filter:
    brightness(1.2) 
    saturate(6.5)  
    drop-shadow(0 0 0px rgba(250, 250, 254, 0.91)) 
-   drop-shadow(0 0 0px rgba(35, 245, 155, 1));
+   drop-shadow(0 0 0px rgba(35, 245, 155, 1)) 
+   hue-rotate(340deg)
 }
 
 .poster-brand-name {
   display: block;
   font-family: MuseoModerno, Inter, system-ui, sans-serif;
   font-optical-sizing: auto;
-  font-size: 2.1cqw;
+  font-size: 1.7cqw;
   font-weight: 400;
   font-style: normal;
-  line-height: 0;
+  line-height: 0.3;
   color: #bdcffe;
   text-transform: lowercase;
   letter-spacing: -0.1cqw;
-  text-shadow: 0px 0px 2px rgba(16, 244, 240, 0.95), 1px 1px 0px rgba(16, 244, 240, 0.95);
+  text-shadow: 0px 0px 2px rgb(16 244 164 / 95%), 1px 1px 0px rgba(16, 244, 240, 0.95);
 }
 
 @media (max-width: 720px) {
