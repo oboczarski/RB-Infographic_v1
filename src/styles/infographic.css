@@ -76,7 +76,7 @@
   margin: 0;
   display: flex;
   align-items: flex-start;
-  gap: 2.15cqw;
+  gap: 2.65cqw;
   white-space: nowrap;
   line-height: 0.82;
 }
@@ -133,18 +133,18 @@
 }
 
 .poster-subtitle {
-  display: grid;
-  grid-template-columns: 10.2cqw max-content 10.2cqw;
-  gap: 2.2cqw;
-  align-items: center;
-  width: fit-content;
-  margin: 0.55cqw 0 0 20.8cqw;
-  color: #18f6ef;
-  font-family: Tourney, "Barlow Condensed", Impact, sans-serif;
-  font-size: 2.95cqw;
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 0.92cqw;
+     display: grid;
+    grid-template-columns: 10.2cqw max-content 10.2cqw;
+    gap: 3.9cqw;
+    align-items: center;
+    width: fit-content;
+    margin: 1.45cqw 0 0 3.4cqw;
+    color: #18f6ef;
+    font-family: Tourney, "Barlow Condensed", Impact, sans-serif;
+    font-size: 2.55cqw;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.9cqw;
 }
 
 .poster-subtitle span {
@@ -298,7 +298,7 @@
 .tier-rail__code {
   display: block;
   font-family: "Permanent Marker", "Barlow Condensed", Impact, sans-serif;
-  font-size: 11.55cqw;
+  font-size: 12.35cqw;
   font-style: normal;
   font-weight: 400;
   line-height: 0.88;
@@ -373,8 +373,8 @@
 }
 
 .player-list__logo-wrap {
-  width: 5cqw;
-  height: 5cqw;
+  width: 5.2cqw;
+  height: 5.2cqw;
   display: grid;
   place-items: center;
   filter:
@@ -390,34 +390,43 @@
 
 .tier-band--cyan .player-list__row {
   grid-template-columns: 6.75cqw minmax(0, 1fr);
+  gap: 14px;
 }
 
 .tier-band--cyan .player-list__logo-wrap {
-  width: 5.78cqw;
-  height: 5.78cqw;
+  width: 6.48cqw;
+  height: 6.48cqw;
 }
 
 .tier-band--cyan .player-list__name {
-  font-size: 2.38cqw;
+    font-size: 2.88cqw;
+    font-weight: 300;
+    letter-spacing: -0.03rem;
 }
 
-.tier-band--blue .player-list__logo-wrap,
+.tier-band--blue .player-list__logo-wrap {
+  width: 4.85cqw;
+  height: 4.85cqw;
+}
 .tier-band--violet .player-list__logo-wrap {
-  width: 4.72cqw;
-  height: 4.72cqw;
+  width: 4.7cqw;
+  height: 4.7cqw;
 }
 
-.tier-band--blue .player-list__name,
+.tier-band--blue .player-list__name {
+  font-size: 2.08cqw;
+}
+
 .tier-band--violet .player-list__name {
   font-size: 1.98cqw;
 }
 
 .player-list__name {
   min-width: 0;
-  color: #f9fbff;
+  color: #e0e6f1;
   font-family: "Google Sans", Inter, system-ui, sans-serif;
-  font-size: 2.12cqw;
-  font-weight: 700;
+  font-size: 2.3cqw;
+  font-weight: 400;
   line-height: 1;
   white-space: nowrap;
   overflow: hidden;
@@ -437,8 +446,8 @@
 }
 
 .tier-band--magenta .player-list__logo-wrap {
-  width: 3.8cqw;
-  height: 3.8cqw;
+  width: 3.5cqw;
+  height: 3.5cqw;
 }
 
 .tier-band--magenta .player-list__name {
@@ -541,13 +550,14 @@
 .dh-mark__word {
   font-family: MuseoModerno, Inter, system-ui, sans-serif;
   font-size: 4.2cqw;
-  font-weight: 280;
+  font-weight: 380;
   font-style: normal;
-  letter-spacing: -0.4cqw;
+  letter-spacing: -0.35cqw;
+  word-spacing: 0.6cqw;
   line-height: 1;
   color: transparent;
   background:
-    linear-gradient(180deg, #858c91 35%, #30a6c599, #858c91 75%);
+    linear-gradient(90deg, #70ffff 0%, #2ffcf1 10%, #00cfff 80%, #00a0ff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow: 0 0 1.3cqw rgba(255, 255, 255, 0.18);
@@ -560,35 +570,34 @@
   display: grid;
   justify-items: center;
   gap: 0cqw;
-  margin-top: -0.55cqw;
-  margin-right: -2cqw;
-      padding: 4px 11px 17px;
-    border-radius: 35px;
+  margin-top: -0.25cqw;
+  margin-right: -1.6cqw;
+      padding: 0px;
+    border-radius: 53px;
     border: 7px solid transparent;
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-blend-mode: normal;
     background:
-      /* Content 1: Soft violet specular glow (top-left) */    
-      radial-gradient(circle at 35% 70%, rgba(47, 121, 154, 0.36) 0%, transparent 50%) content-box,        
-      /* Content 2: Soft teal specular glow (bottom-right) */   
-      radial-gradient(circle at 68% 40%, rgba(20, 104, 166, 0.52) 0%, rgba(90, 54, 166, 0.42) 30%, #0221 50%, #0221 100%) content-box,       
-      /* Content 3: Deep sapphire-ink canvas core */   
-      linear-gradient(126deg, #101f27 0%, #101a2a 10%, #101e1f 80%, #222263 100%) content-box,      
-      /* Padding Box: Dark glass bevel with subtle purple-to-teal refractive tint */    
-      linear-gradient(135deg, rgba(10, 20, 20, 0.95) 0%, rgba(20, 21, 42, 0.96) 30%, rgba(15, 18, 33, 0.9) 70%, rgba(12, 34, 40, 0.9) 100%) padding-box,        
-      /* Border Box: Ultra-fine, glowing iridescent glass border */    
-      linear-gradient(229deg, rgba(127, 51, 234, 0.55) 0%, rgba(59, 90, 246, 0.75) 35%, rgba(10, 21, 55, 0.9)60%, rgba(20, 184, 166, 0.4) 100%) border-box;
-
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.9), 0 15px 30px -8px rgba(0, 0, 0, 0.95), 1px 0px 9px -2px rgba(47, 181, 254, 0.97), 3px 0px 19px 9px rgba(100, 204, 246, 0.33);
+    /* Content 1: Soft violet specular glow (top-left) */ 
+    radial-gradient(circle at 35% 70%, rgb(47 121 154 / 52%) 0%, transparent 50%) content-box, 
+    /* Content 2: Soft teal specular glow (bottom-right) */ 
+    radial-gradient(circle at 68% 40%, rgba(20, 104, 166, 0.52) 0%, rgb(54 72 166 / 74%) 30%, #0221 50%, #0221 100%) content-box, 
+    /* Content 3: Deep sapphire-ink canvas core */ 
+    linear-gradient(126deg, #203f37 0%, #101a2a 40%, #101e1f 50%, #222263 100%) content-box, 
+    /* Padding Box: Dark glass bevel with subtle purple-to-teal refractive tint */ 
+    linear-gradient(135deg, rgba(10, 20, 20, 0.95) 0%, rgba(20, 21, 42, 0.96) 30%, rgba(15, 18, 33, 0.9) 90%, rgba(12, 34, 40, 0.9) 100%) padding-box, 
+    /* Border Box: Ultra-fine, glowing iridescent glass border */ 
+    linear-gradient(229deg, rgba(127, 51, 234, 0.55) 0%, rgba(59, 90, 246, 0.75) 35%, rgba(10, 21, 55, 0.9) 60%, rgba(20, 184, 166, 0.4) 100%) border-box;
 }
 
 .poster-brand-logo {
-  width: 10cqw;
-  height: 10cqw;
+  width: 9.2cqw;
+  height: 9cqw;
   object-fit: contain;
+  padding: 7px 0 0 0px;
   filter:
-      brightness(1.2) 
+      brightness(1.3) 
       saturate(18.5) 
       hue-rotate(47deg) 
       drop-shadow(0 0 0px rgba(250, 250, 254, 0)) 
@@ -599,14 +608,14 @@
   display: block;
   font-family: MuseoModerno, Inter, system-ui, sans-serif;
   font-optical-sizing: auto;
-  font-size: 1.7cqw;
+  font-size: 0cqw;
   font-weight: 400;
   font-style: normal;
   line-height: 0;
   color: #d8e3ff;
   text-transform: lowercase;
   letter-spacing: -0.1cqw;
-  text-shadow: 0px 0px 2px rgb(89 16 244 / 95%), 1px 1px 0px rgba(16, 244, 240, 0.95);
+  text-shadow: 0px 0px 2px rgb(89 16 244 / 95%), 1px 1px 0px rgb(16 122 244 / 95%);
 }
 
 @media (max-width: 720px) {
