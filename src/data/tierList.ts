@@ -118,24 +118,24 @@ export const players: Player[] = playerRows.map((player) => {
 });
 
 export const playerPlacements: PlayerPlacement[] = [
-  { rank: 1, x: -15, y: -15, width: 97, zIndex: 4 },
-  { rank: 2, x: -29, y: -17, width: 178, zIndex: 3 },
+  { rank: 1, x: -14, y: -12, width: 98, zIndex: 4 },
+  { rank: 2, x: -26, y: -14, width: 180, zIndex: 3 },
   { rank: 3, x: -26, y: 4, width: 84, zIndex: 6 },
   { rank: 4, x: 6, y: -20, width: 83, zIndex: 5 },
   { rank: 5, x: 5, y: 7, width: 130, zIndex: 4 },
   { rank: 6, x: 25, y: 10, width: 125, zIndex: 3 },
-  { rank: 7, x: 5, y: 6, width: 88, zIndex: 11 },
+  { rank: 7, x: 3, y: 7, width: 90, zIndex: 11 },
   { rank: 8, x: -33, y: -1, width: 103, zIndex: 5 },
-  { rank: 9, x: 48, y: 8, width: 73, zIndex: 5 },
+  { rank: 9, x: 43, y: 9, width: 78, zIndex: 5 },
   { rank: 10, x: 12, y: 5, width: 84, zIndex: 5 },
   { rank: 11, x: 2, y: 9, width: 42, zIndex: 4 },
   { rank: 12, x: 36, y: 9, width: 68, zIndex: 3 },
-  { rank: 13, x: -13, y: 21, width: 68, zIndex: 7 },
+  { rank: 13, x: -14, y: 21, width: 68, zIndex: 7 },
   { rank: 14, x: -3, y: 8, width: 38, zIndex: 6 },
   { rank: 15, x: 34, y: 0, width: 79, zIndex: 5 },
   { rank: 16, x: 46, y: 27, width: 75, zIndex: 8 },
   { rank: 17, x: 16, y: 16, width: 85, zIndex: 9 },
-  { rank: 18, x: -26, y: -1, width: 119, zIndex: 4 },
+  { rank: 18, x: -29, y: 0, width: 123, zIndex: 6 },
 ];
 
 export function playersForTier(tier: TierId): Player[] {

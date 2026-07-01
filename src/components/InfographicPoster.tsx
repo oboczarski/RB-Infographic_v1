@@ -16,9 +16,9 @@ export function InfographicPoster() {
             <span className="poster-title__rb">RB</span>
             <span className="poster-title__main">TIER LIST</span>
           </h1>
-          <div className="poster-subtitle" aria-label="Top 5 tiers">
+          <div className="poster-subtitle" aria-label="Dynasty Hub RB tiers 1 through 5">
             <span />
-            <strong>TOP 5 TIERS</strong>
+            <strong>DYNASTY HUB • RB TIERS 1-5</strong>
             <span />
           </div>
         </div>
