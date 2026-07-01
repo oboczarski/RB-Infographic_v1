@@ -559,21 +559,40 @@
   justify-self: end;
   display: grid;
   justify-items: center;
-  gap: 0.12cqw;
-  margin-top: -0.05cqw;
-  margin-right: -2.5cqw;
+  gap: 0cqw;
+  margin-top: -0.55cqw;
+  margin-right: -2cqw;
+      padding: 4px 11px 17px;
+    border-radius: 35px;
+    border: 7px solid transparent;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-blend-mode: normal;
+    background:
+      /* Content 1: Soft violet specular glow (top-left) */    
+      radial-gradient(circle at 35% 70%, rgba(47, 121, 154, 0.36) 0%, transparent 50%) content-box,        
+      /* Content 2: Soft teal specular glow (bottom-right) */   
+      radial-gradient(circle at 68% 40%, rgba(20, 104, 166, 0.52) 0%, rgba(90, 54, 166, 0.42) 30%, #0221 50%, #0221 100%) content-box,       
+      /* Content 3: Deep sapphire-ink canvas core */   
+      linear-gradient(126deg, #101f27 0%, #101a2a 10%, #101e1f 80%, #222263 100%) content-box,      
+      /* Padding Box: Dark glass bevel with subtle purple-to-teal refractive tint */    
+      linear-gradient(135deg, rgba(10, 20, 20, 0.95) 0%, rgba(20, 21, 42, 0.96) 30%, rgba(15, 18, 33, 0.9) 70%, rgba(12, 34, 40, 0.9) 100%) padding-box,        
+      /* Border Box: Ultra-fine, glowing iridescent glass border */    
+      linear-gradient(229deg, rgba(127, 51, 234, 0.55) 0%, rgba(59, 90, 246, 0.75) 35%, rgba(10, 21, 55, 0.9)60%, rgba(20, 184, 166, 0.4) 100%) border-box;
+
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.9), 0 15px 30px -8px rgba(0, 0, 0, 0.95), 1px 0px 9px -2px rgba(47, 181, 254, 0.97), 3px 0px 19px 9px rgba(100, 204, 246, 0.33);
 }
 
 .poster-brand-logo {
-  width: 8.4cqw;
-  height: 8.4cqw;
+  width: 10cqw;
+  height: 10cqw;
   object-fit: contain;
   filter:
-   brightness(1.2) 
-   saturate(6.5)  
-   drop-shadow(0 0 0px rgba(250, 250, 254, 0.91)) 
-   drop-shadow(0 0 0px rgba(35, 245, 155, 1)) 
-   hue-rotate(340deg)
+      brightness(1.2) 
+      saturate(18.5) 
+      hue-rotate(47deg) 
+      drop-shadow(0 0 0px rgba(250, 250, 254, 0)) 
+      drop-shadow(0 0 1px rgba(105, 45, 255, 1));
 }
 
 .poster-brand-name {
@@ -583,11 +602,11 @@
   font-size: 1.7cqw;
   font-weight: 400;
   font-style: normal;
-  line-height: 0.3;
-  color: #bdcffe;
+  line-height: 0;
+  color: #d8e3ff;
   text-transform: lowercase;
   letter-spacing: -0.1cqw;
-  text-shadow: 0px 0px 2px rgb(16 244 164 / 95%), 1px 1px 0px rgba(16, 244, 240, 0.95);
+  text-shadow: 0px 0px 2px rgb(89 16 244 / 95%), 1px 1px 0px rgba(16, 244, 240, 0.95);
 }
 
 @media (max-width: 720px) {
