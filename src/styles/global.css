@@ -44,7 +44,8 @@ select {
 .app-shell {
   min-height: 100dvh;
   display: grid;
-  place-items: center;
+  align-items: start;
+  justify-items: center;
   padding: 24px;
   overflow-x: hidden;
 }

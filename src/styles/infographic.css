@@ -618,6 +618,447 @@
   text-shadow: 0px 0px 2px rgb(89 16 244 / 95%), 1px 1px 0px rgb(16 122 244 / 95%);
 }
 
+.infographic-workbench {
+  width: min(1024px, 100vw);
+  display: grid;
+  justify-items: center;
+  gap: clamp(10px, 1.4vw, 18px);
+}
+
+.infographic-tabs {
+  position: relative;
+  z-index: 40;
+  display: inline-grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: min(430px, calc(100vw - 24px));
+  margin-top: clamp(10px, 1.2vw, 18px);
+  padding: 4px;
+  border: 1px solid rgba(41, 243, 240, 0.34);
+  border-radius: 999px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.015)),
+    radial-gradient(circle at 22% 0%, rgba(16, 244, 240, 0.17), transparent 46%),
+    rgba(2, 7, 10, 0.86);
+  box-shadow:
+    0 18px 46px rgba(0, 0, 0, 0.46),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+    0 0 32px rgba(16, 244, 240, 0.1);
+  backdrop-filter: blur(18px);
+}
+
+.infographic-tabs__tab {
+  position: relative;
+  min-height: 38px;
+  border: 0;
+  border-radius: 999px;
+  color: rgba(220, 239, 246, 0.74);
+  background: transparent;
+  font-family: "Google Sans", Inter, system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    color 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.infographic-tabs__tab[aria-selected="true"] {
+  color: #041014;
+  background:
+    linear-gradient(135deg, #8ffff8 0%, #1cf4ee 46%, #53a8ff 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.62),
+    0 0 24px rgba(16, 244, 240, 0.3);
+}
+
+.infographic-tabs__tab:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.92);
+  outline-offset: 3px;
+}
+
+.infographic-tabs__panel {
+  width: min(1024px, 100vw);
+  display: grid;
+  justify-items: center;
+}
+
+.infographic-poster--revised {
+  background:
+    radial-gradient(ellipse at 50% -9%, rgba(86, 251, 255, 0.24), transparent 31%),
+    radial-gradient(ellipse at 108% 27%, rgba(72, 126, 255, 0.24), transparent 28%),
+    radial-gradient(ellipse at -10% 66%, rgba(255, 31, 143, 0.16), transparent 30%),
+    linear-gradient(180deg, #03070a 0%, #05080c 34%, #030508 66%, #010204 100%);
+  border-color: rgba(114, 255, 248, 0.62);
+  box-shadow:
+    0 42px 118px rgba(0, 0, 0, 0.82),
+    0 0 86px rgba(16, 244, 240, 0.18),
+    0 0 0 0.18cqw rgba(255, 255, 255, 0.018),
+    inset 0 0 0 0.1cqw rgba(255, 255, 255, 0.08),
+    inset 0 0 11cqw rgba(14, 188, 210, 0.07);
+}
+
+.infographic-poster--revised::before {
+  z-index: -2;
+  background:
+    linear-gradient(99deg, transparent 0 48%, rgba(16, 244, 240, 0.13) 48.4%, transparent 50.4%),
+    linear-gradient(112deg, transparent 0 62%, rgba(255, 255, 255, 0.09) 62.25%, transparent 64%),
+    linear-gradient(172deg, rgba(255, 255, 255, 0.055) 0 0.055cqw, transparent 0.055cqw 2.1cqw),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.025) 0 0.06cqw, transparent 0.06cqw 7.8cqw);
+  opacity: 0.78;
+}
+
+.infographic-poster--revised::after {
+  box-shadow:
+    inset 0 0 0 0.12cqw rgba(122, 255, 249, 0.18),
+    inset 0 0 2.4cqw rgba(255, 255, 255, 0.05),
+    inset 0 0 8.8cqw rgba(0, 0, 0, 0.82),
+    inset 0 -19cqw 8cqw rgba(0, 0, 0, 0.36);
+}
+
+.revised-poster__aurora,
+.revised-poster__field-grid,
+.revised-poster__light-rig {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.revised-poster__aurora {
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 56% 20%, rgba(16, 244, 240, 0.16), transparent 23%),
+    radial-gradient(ellipse at 69% 43%, rgba(92, 150, 255, 0.16), transparent 31%),
+    radial-gradient(ellipse at 64% 83%, rgba(255, 31, 143, 0.13), transparent 30%),
+    linear-gradient(118deg, transparent 0 56%, rgba(255, 255, 255, 0.055) 56.3%, transparent 59%),
+    linear-gradient(66deg, transparent 0 24%, rgba(16, 244, 240, 0.05) 24.3%, transparent 27%);
+  filter: saturate(1.15);
+}
+
+.revised-poster__field-grid {
+  z-index: 0;
+  opacity: 0.22;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.11) 0 0.055cqw, transparent 0.055cqw),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0 0.055cqw, transparent 0.055cqw);
+  background-size: 100% 5.1cqw, 8.35cqw 100%;
+  mask-image: linear-gradient(180deg, transparent 0%, #000 16%, #000 88%, transparent 100%);
+}
+
+.revised-poster__light-rig {
+  z-index: 1;
+  background:
+    linear-gradient(102deg, transparent 0 48%, rgba(16, 244, 240, 0.15) 48.2%, rgba(16, 244, 240, 0.02) 54%, transparent 58%),
+    linear-gradient(77deg, transparent 0 64%, rgba(255, 255, 255, 0.08) 64.3%, transparent 67%),
+    radial-gradient(circle at 16% 13%, rgba(255, 255, 255, 0.23), transparent 6%),
+    radial-gradient(circle at 84% 12%, rgba(255, 255, 255, 0.2), transparent 6%);
+  mix-blend-mode: screen;
+  opacity: 0.68;
+}
+
+.infographic-poster--revised .poster-noise {
+  opacity: 0.32;
+  mix-blend-mode: soft-light;
+  background-image:
+    radial-gradient(circle at 18% 28%, rgba(255, 255, 255, 0.7) 0 0.055cqw, transparent 0.075cqw),
+    radial-gradient(circle at 71% 16%, rgba(255, 255, 255, 0.5) 0 0.045cqw, transparent 0.065cqw),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045) 0 0.05cqw, transparent 0.05cqw 0.42cqw);
+  background-size: 1.8cqw 1.8cqw, 2.6cqw 2.6cqw, 100% 0.42cqw;
+}
+
+.infographic-poster--revised .poster-header {
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 69% 70%, rgba(16, 244, 240, 0.24), transparent 31%),
+    radial-gradient(ellipse at 18% 0%, rgba(255, 255, 255, 0.14), transparent 24%),
+    linear-gradient(180deg, rgba(5, 11, 15, 0.98) 0%, rgba(3, 7, 11, 0.82) 54%, rgba(3, 7, 10, 0.06) 100%);
+}
+
+.revised-header__glass {
+  position: absolute;
+  inset: 0.8cqw 1.55cqw auto 1.55cqw;
+  height: 12.75cqw;
+  pointer-events: none;
+  border: 0.08cqw solid rgba(125, 255, 248, 0.22);
+  border-bottom-color: rgba(125, 255, 248, 0.5);
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.08), transparent 27%),
+    linear-gradient(180deg, rgba(1, 18, 24, 0.78), rgba(0, 0, 0, 0.16)),
+    radial-gradient(ellipse at 52% 112%, rgba(16, 244, 240, 0.18), transparent 42%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.13),
+    inset 0 -0.12cqw 0 rgba(16, 244, 240, 0.52),
+    0 1.4cqw 4.4cqw rgba(0, 0, 0, 0.62);
+  clip-path: polygon(1.5cqw 0, 100% 0, calc(100% - 1.5cqw) 100%, 0 100%);
+}
+
+.infographic-poster--revised .poster-title {
+  position: relative;
+  z-index: 2;
+  gap: 2.45cqw;
+  filter: drop-shadow(0 1.2cqw 1.4cqw rgba(0, 0, 0, 0.7));
+}
+
+.infographic-poster--revised .poster-title__rb {
+  background:
+    linear-gradient(128deg, #d7fffb 0%, #41fff5 27%, #03aeb8 55%, #79fff6 72%, #0fe7ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter:
+    drop-shadow(0 0 1.3cqw rgba(16, 244, 240, 0.52))
+    drop-shadow(0 0.45cqw 0 rgba(0, 0, 0, 0.8));
+}
+
+.infographic-poster--revised .poster-title__main {
+  background:
+    linear-gradient(180deg, #ffffff 0%, #d5dde0 26%, #747d82 48%, #f7fbfb 55%, #3d454a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow:
+    0.16cqw 0.16cqw 0 rgba(0, 0, 0, 0.82),
+    0 0 0.75cqw rgba(255, 255, 255, 0.18),
+    0 0 2.5cqw rgba(16, 244, 240, 0.14);
+}
+
+.infographic-poster--revised .poster-subtitle {
+  position: relative;
+  z-index: 2;
+  color: #62fff8;
+  text-shadow:
+    0 0 1.1cqw rgba(16, 244, 240, 0.75),
+    0 0.12cqw 0 rgba(0, 0, 0, 0.92);
+}
+
+.infographic-poster--revised .poster-subtitle span {
+  height: 0.13cqw;
+  background:
+    linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.88) 14%, currentColor 42%, currentColor 72%, transparent);
+  box-shadow:
+    0 0 0.9cqw rgba(16, 244, 240, 0.8),
+    0 0 0.1cqw rgba(255, 255, 255, 0.75);
+}
+
+.infographic-poster--revised .poster-brand-lockup {
+  position: relative;
+  z-index: 3;
+  box-shadow:
+    0 0 2.7cqw rgba(16, 244, 240, 0.16),
+    0 1.4cqw 2.2cqw rgba(0, 0, 0, 0.48),
+    inset 0 0 1.2cqw rgba(255, 255, 255, 0.04);
+}
+
+.infographic-poster--revised .tier-band {
+  border-top-color: rgba(var(--accent-rgb), 0.96);
+  border-bottom-color: rgba(var(--accent-rgb), 0.58);
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.98) 0 19.1cqw, rgba(2, 8, 12, 0.82) 19.1cqw 48.3cqw, rgba(3, 8, 12, 0.28) 48.3cqw),
+    radial-gradient(ellipse at 78% 46%, rgba(var(--accent-rgb), 0.36), transparent 44%),
+    linear-gradient(112deg, rgba(var(--accent-rgb), 0.19), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.22)),
+    #020509;
+  box-shadow:
+    inset 0 0 0 0.055cqw rgba(255, 255, 255, 0.06),
+    inset 0 1.15cqw 2.4cqw rgba(255, 255, 255, 0.025),
+    inset 0 -1.45cqw 2.8cqw rgba(0, 0, 0, 0.44),
+    0 0.55cqw 1.6cqw rgba(0, 0, 0, 0.54),
+    0 0 1.7cqw rgba(var(--accent-rgb), 0.12);
+}
+
+.infographic-poster--revised .tier-band::before {
+  background:
+    linear-gradient(108deg, transparent 0 44%, rgba(var(--accent-rgb), 0.22) 44.4%, rgba(255, 255, 255, 0.08) 46.2%, transparent 50%),
+    linear-gradient(163deg, transparent 0 53%, rgba(255, 255, 255, 0.09) 53.2%, transparent 55.3%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.052) 0 0.06cqw, transparent 0.06cqw 3.15cqw),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.03) 0 0.04cqw, transparent 0.04cqw 5.6cqw),
+    radial-gradient(ellipse at 91% 26%, rgba(255, 255, 255, 0.24), transparent 21%);
+  opacity: 0.88;
+}
+
+.infographic-poster--revised .tier-band::after {
+  border-left-color: rgba(var(--accent-rgb), 0.98);
+  border-right-color: rgba(var(--accent-rgb), 0.32);
+  box-shadow:
+    inset 0 0 0 0.08cqw rgba(var(--accent-rgb), 0.2),
+    inset 0 0 2.8cqw rgba(0, 0, 0, 0.54),
+    inset 0 0.42cqw 0.8cqw rgba(255, 255, 255, 0.035),
+    0 0 2.8cqw rgba(var(--accent-rgb), 0.22);
+}
+
+.infographic-poster--revised .tier-band--cyan {
+  box-shadow:
+    inset 0 0 0 0.055cqw rgba(255, 255, 255, 0.07),
+    inset 0 1.15cqw 2.4cqw rgba(255, 255, 255, 0.03),
+    inset 0 -1.45cqw 2.8cqw rgba(0, 0, 0, 0.43),
+    0 0.55cqw 1.6cqw rgba(0, 0, 0, 0.54),
+    0 0 2.2cqw rgba(var(--accent-rgb), 0.16);
+}
+
+.infographic-poster--revised .tier-band--violet {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.98) 0 19.1cqw, rgba(9, 7, 18, 0.84) 19.1cqw 48.3cqw, rgba(7, 6, 16, 0.32) 48.3cqw),
+    radial-gradient(ellipse at 78% 47%, rgba(var(--accent-rgb), 0.35), transparent 44%),
+    linear-gradient(112deg, rgba(var(--accent-rgb), 0.19), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.22)),
+    #05040b;
+}
+
+.infographic-poster--revised .tier-band--magenta {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.98) 0 19.1cqw, rgba(18, 3, 12, 0.84) 19.1cqw 48.3cqw, rgba(16, 3, 12, 0.34) 48.3cqw),
+    radial-gradient(ellipse at 78% 48%, rgba(var(--accent-rgb), 0.34), transparent 46%),
+    linear-gradient(112deg, rgba(var(--accent-rgb), 0.19), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(0, 0, 0, 0.24)),
+    #080207;
+}
+
+.infographic-poster--revised .tier-rail {
+  border-right-color: rgba(var(--accent-rgb), 0.9);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.07), transparent 32%),
+    radial-gradient(ellipse at 66% 0%, rgba(var(--accent-rgb), 0.29), transparent 45%),
+    linear-gradient(90deg, rgba(var(--accent-rgb), 0.16), transparent 60%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.52)),
+    rgba(0, 0, 0, 0.58);
+  box-shadow:
+    inset -0.18cqw 0 0 rgba(var(--accent-rgb), 0.22),
+    inset 0 0 2.5cqw rgba(0, 0, 0, 0.68),
+    0.8cqw 0 2.2cqw rgba(0, 0, 0, 0.24);
+}
+
+.infographic-poster--revised .tier-rail__code {
+  text-shadow:
+    0 0 1.9cqw rgba(var(--accent-rgb), 0.48),
+    0 0.22cqw 0 rgba(0, 0, 0, 0.85);
+}
+
+.infographic-poster--revised .tier-rail__label {
+  text-shadow:
+    0 0 1.85cqw rgba(var(--accent-rgb), 0.58),
+    0 0.12cqw 0 rgba(0, 0, 0, 0.92);
+}
+
+.infographic-poster--revised .player-list {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045), transparent 15%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(var(--accent-rgb), 0.06), rgba(0, 0, 0, 0.1)),
+    rgba(0, 0, 0, 0.31);
+  box-shadow:
+    inset 0.1cqw 0 0 rgba(255, 255, 255, 0.045),
+    inset -0.12cqw 0 0 rgba(var(--accent-rgb), 0.1);
+}
+
+.infographic-poster--revised .player-list__row {
+  border-bottom-color: rgba(255, 255, 255, 0.13);
+}
+
+.infographic-poster--revised .player-list__row::after {
+  left: 5.25cqw;
+  background:
+    linear-gradient(90deg, rgba(var(--accent-rgb), 0.56), rgba(255, 255, 255, 0.14) 34%, transparent);
+}
+
+.infographic-poster--revised .player-list__logo-wrap {
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(255, 255, 255, 0.18), transparent 58%),
+    rgba(0, 0, 0, 0.2);
+  box-shadow:
+    inset 0 0 0 0.06cqw rgba(255, 255, 255, 0.13),
+    0 0 0.85cqw rgba(var(--accent-rgb), 0.1);
+}
+
+.infographic-poster--revised .player-list__name {
+  color: #edf5fb;
+  text-shadow:
+    0.11cqw 0.11cqw 0 rgba(0, 0, 0, 0.92),
+    0 0 0.8cqw rgba(255, 255, 255, 0.24),
+    0 0 1.5cqw rgba(var(--accent-rgb), 0.08);
+}
+
+.infographic-poster--revised .player-collage {
+  background:
+    radial-gradient(ellipse at 53% 80%, rgba(0, 0, 0, 0.68), transparent 48%),
+    radial-gradient(ellipse at 74% 22%, rgba(255, 255, 255, 0.17), transparent 19%),
+    linear-gradient(112deg, rgba(var(--accent-rgb), 0.13), transparent 41%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.24));
+}
+
+.infographic-poster--revised .player-collage::before {
+  background:
+    linear-gradient(112deg, transparent 0 52%, rgba(255, 255, 255, 0.12) 52.4%, transparent 55%),
+    repeating-linear-gradient(172deg, rgba(255, 255, 255, 0.08) 0 0.06cqw, transparent 0.06cqw 2.15cqw),
+    radial-gradient(ellipse at 86% 16%, rgba(255, 255, 255, 0.24), transparent 21%),
+    radial-gradient(ellipse at 50% 94%, rgba(0, 0, 0, 0.78), transparent 45%),
+    linear-gradient(90deg, transparent, rgba(var(--accent-rgb), 0.07), transparent);
+  opacity: 0.64;
+}
+
+.infographic-poster--revised .player-collage__halo {
+  inset: 8% -3% auto 2%;
+  height: 56%;
+  background:
+    radial-gradient(ellipse at 60% 42%, rgba(255, 255, 255, 0.22), transparent 52%),
+    linear-gradient(90deg, transparent, rgba(var(--accent-rgb), 0.28), transparent),
+    linear-gradient(112deg, transparent 0 45%, rgba(255, 255, 255, 0.12) 46%, transparent 51%);
+  filter: blur(0.34cqw);
+  opacity: 0.88;
+}
+
+.infographic-poster--revised .poster-footer {
+  background:
+    linear-gradient(90deg, rgba(16, 244, 240, 0.2), rgba(0, 0, 0, 0.96) 28% 72%, rgba(92, 150, 255, 0.18)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), #020506 58%, #010203);
+  border-top-color: rgba(97, 255, 249, 0.86);
+  box-shadow:
+    0 -0.95cqw 2.6cqw rgba(0, 0, 0, 0.68),
+    inset 0 0.12cqw 0 rgba(255, 255, 255, 0.08),
+    inset 0 0 2.8cqw rgba(16, 244, 240, 0.06);
+}
+
+.infographic-poster--revised .poster-footer__line {
+  background:
+    linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.58) 12%, rgba(16, 244, 240, 0.88));
+  box-shadow:
+    0 0 1.25cqw rgba(16, 244, 240, 0.78),
+    0 0 0.18cqw rgba(255, 255, 255, 0.5);
+}
+
+.infographic-poster--revised .dh-mark__word {
+  background:
+    linear-gradient(90deg, #b9ffff 0%, #43fff3 28%, #00cfff 72%, #a8b7ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow:
+    0 0 1.4cqw rgba(16, 244, 240, 0.22),
+    0 0.12cqw 0 rgba(0, 0, 0, 0.82);
+}
+
+@media (max-width: 1100px) {
+  .infographic-workbench {
+    gap: 8px;
+  }
+
+  .infographic-tabs {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 720px) {
+  .infographic-tabs {
+    width: min(330px, calc(100vw - 18px));
+    padding: 3px;
+  }
+
+  .infographic-tabs__tab {
+    min-height: 32px;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+  }
+}
+
 @media (max-width: 720px) {
   .infographic-poster {
     width: min(100vw, 1024px);
