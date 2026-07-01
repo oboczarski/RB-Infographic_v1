@@ -15,10 +15,15 @@ export function RevisedInfographicPoster() {
       <div className="revised-poster__aurora" aria-hidden="true" />
       <div className="revised-poster__field-grid" aria-hidden="true" />
       <div className="revised-poster__light-rig" aria-hidden="true" />
+      <div className="revised-poster__sideline" aria-hidden="true" />
       <div className="poster-noise" aria-hidden="true" />
 
       <header className="poster-header">
         <div className="revised-header__glass" aria-hidden="true" />
+        <div className="revised-header__scoreboard" aria-hidden="true" />
+        <div className="revised-header__slash revised-header__slash--left" aria-hidden="true" />
+        <div className="revised-header__slash revised-header__slash--right" aria-hidden="true" />
+        <div className="revised-header__rule" aria-hidden="true" />
         <div className="poster-header__copy">
           <h1 id="revised-poster-title" className="poster-title">
             <span className="poster-title__rb">RB</span>
