@@ -1976,6 +1976,248 @@
     linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(0, 0, 0, 0.25));
 }
 
+/* Revised v4: requested cleanup pass. */
+.infographic-poster--revised .poster-header {
+  height: 16.1cqw;
+  grid-template-columns: minmax(0, 1fr) 14.25cqw;
+  padding: 1.6cqw 3.2cqw 0 3.1cqw;
+  background:
+    radial-gradient(ellipse at 80% 58%, rgba(62, 106, 255, 0.24), transparent 30%),
+    radial-gradient(ellipse at 9% 4%, rgba(25, 255, 240, 0.18), transparent 25%),
+    linear-gradient(112deg, rgba(16, 244, 240, 0.12) 0 16%, transparent 16.4% 74%, rgba(107, 76, 255, 0.12) 74.5%),
+    linear-gradient(180deg, rgba(2, 7, 10, 0.96), rgba(3, 6, 10, 0.86) 58%, rgba(3, 6, 10, 0.08));
+}
+
+.infographic-poster--revised .poster-header::after,
+.infographic-poster--revised .revised-header__scoreboard,
+.infographic-poster--revised .revised-header__rule {
+  display: none;
+}
+
+.infographic-poster--revised .revised-header__glass {
+  inset: 0.72cqw 1.55cqw auto 1.55cqw;
+  height: 12.55cqw;
+  border: 0;
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.11), transparent 24% 74%, rgba(255, 255, 255, 0.05)),
+    linear-gradient(90deg, rgba(14, 255, 240, 0.09), transparent 34%, rgba(89, 102, 255, 0.12)),
+    linear-gradient(180deg, rgba(4, 12, 17, 0.82), rgba(0, 0, 0, 0.12));
+  clip-path: polygon(1.35cqw 0, calc(100% - 0.75cqw) 0, 100% 38%, calc(100% - 1.55cqw) 100%, 0 100%, 0 22%);
+  box-shadow:
+    inset 0 0.08cqw 0 rgba(255, 255, 255, 0.12),
+    0 1.25cqw 4cqw rgba(0, 0, 0, 0.62);
+}
+
+.infographic-poster--revised .revised-header__slash {
+  opacity: 0.2;
+}
+
+.infographic-poster--revised .poster-header__copy::before {
+  opacity: 0.58;
+}
+
+.infographic-poster--revised .poster-header__copy {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  padding-right: 0.8cqw;
+}
+
+.infographic-poster--revised .poster-title {
+  gap: 1.15cqw;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 0.86;
+  padding-top: 0;
+  margin: 0 auto;
+  filter: drop-shadow(0 1.1cqw 1.35cqw rgba(0, 0, 0, 0.72));
+}
+
+.infographic-poster--revised .poster-title__rb {
+  font-family: Audiowide, "Barlow Condensed", Impact, sans-serif;
+  font-size: 10.05cqw;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin: 0;
+  color: transparent;
+  background:
+    linear-gradient(130deg, #82fff1 0%, #06d5d4 50%, #7bfff7 52%, #0cffec 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0;
+  transform: skewX(-9deg) translateY(0.04cqw);
+  text-shadow: 5px 5px 7px #3348;
+  filter: drop-shadow(0 15px 3cqw rgba(16, 244, 240, 0.38));
+}
+
+.infographic-poster--revised .poster-title__rb::after {
+  display: block;
+}
+
+.infographic-poster--revised .poster-title__main {
+  position: relative;
+  font-family: Audiowide, "Barlow Condensed", Impact, sans-serif;
+  font-size: 10.05cqw;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: transparent;
+  background:
+    linear-gradient(180deg, #f4ffff 0%, #83fff6 22%, #2fc8ff 43%, #eefcff 50%, #6c83ff 68%, #273764 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0;
+  transform: translateY(0.04cqw);
+  text-shadow:
+    0.18cqw 0.18cqw 0 rgba(0, 0, 0, 0.74),
+    0 0 0.95cqw rgba(42, 231, 255, 0.28),
+    0 0 2cqw rgba(105, 111, 255, 0.16);
+  filter: none;
+}
+
+.infographic-poster--revised .poster-title__main::after {
+  display: none;
+}
+
+.infographic-poster--revised .poster-subtitle {
+  display: block;
+  width: fit-content;
+  margin: 0.82cqw auto 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  clip-path: none;
+  box-shadow: none;
+  font-family: "Bruno Ace SC", Tourney, "Barlow Condensed", Impact, sans-serif;
+}
+
+.infographic-poster--revised .poster-subtitle span {
+  display: none;
+}
+
+.infographic-poster--revised .poster-brand-lockup {
+  justify-self: end;
+  display: grid;
+  justify-items: center;
+  gap: 0cqw;
+  margin-top: -0.25cqw;
+  margin-right: -0.4cqw;
+  padding: 0;
+  border-radius: 53px;
+  border: 7px solid transparent;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-blend-mode: normal;
+  clip-path: none;
+  transform: none;
+  background:
+    radial-gradient(circle at 35% 70%, rgb(47 121 154 / 52%) 0%, transparent 50%) content-box,
+    radial-gradient(circle at 68% 40%, rgba(20, 104, 166, 0.52) 0%, rgb(54 72 166 / 74%) 30%, #0221 50%, #0221 100%) content-box,
+    linear-gradient(126deg, #203f37 0%, #101a2a 40%, #101e1f 50%, #222263 100%) content-box,
+    linear-gradient(135deg, rgba(10, 20, 20, 0.95) 0%, rgba(20, 21, 42, 0.96) 30%, rgba(15, 18, 33, 0.9) 90%, rgba(12, 34, 40, 0.9) 100%) padding-box,
+    linear-gradient(229deg, rgba(127, 51, 234, 0.55) 0%, rgba(59, 90, 246, 0.75) 35%, rgba(10, 21, 55, 0.9) 60%, rgba(20, 184, 166, 0.4) 100%) border-box;
+  box-shadow: none;
+}
+
+.infographic-poster--revised .poster-brand-logo {
+  width: 9.2cqw;
+  height: 9cqw;
+  object-fit: contain;
+  padding: 7px 0 0;
+  filter:
+    brightness(1.3)
+    saturate(18.5)
+    hue-rotate(47deg)
+    drop-shadow(0 0 0 rgba(250, 250, 254, 0))
+    drop-shadow(0 0 1px rgba(105, 45, 255, 1));
+}
+
+.infographic-poster--revised .tier-rail {
+  border-right: 0.1cqw solid rgba(var(--accent-rgb), 0.8);
+  background:
+    linear-gradient(135deg, rgba(var(--accent-rgb), 0.14), transparent 36%),
+    radial-gradient(ellipse at 65% 0%, rgba(var(--accent-rgb), 0.22), transparent 44%),
+    rgba(0, 0, 0, 0.48);
+  clip-path: polygon(1.8cqw 0, 100% 0, 100% 100%, 1.8cqw 100%, 0 88%, 0 12%);
+  box-shadow: none;
+}
+
+.infographic-poster--revised .tier-rail::before,
+.infographic-poster--revised .tier-rail::after {
+  display: none;
+}
+
+.infographic-poster--revised .tier-rail__code {
+  color: transparent;
+  background:
+    linear-gradient(145deg, var(--accent) 0%, rgba(255, 255, 255, 0.9) 47%, var(--accent) 52%, rgba(var(--accent-rgb), 0.76) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0;
+  text-shadow: 0 0 1.5cqw rgba(var(--accent-rgb), 0.34);
+  filter: none;
+}
+
+.infographic-poster--revised .tier-rail__label {
+  color: var(--accent);
+  text-shadow: 0 0 1.6cqw rgba(var(--accent-rgb), 0.45);
+}
+
+.infographic-poster--revised .player-list__row {
+  border-bottom: 0.08cqw solid rgba(255, 255, 255, 0.14);
+}
+
+.infographic-poster--revised .player-list__row:last-child {
+  border-bottom-color: transparent;
+}
+
+.infographic-poster--revised .player-list__row::after {
+  display: none;
+}
+
+.infographic-poster--revised .player-list__logo {
+  width: 70%;
+  height: 70%;
+}
+
+.infographic-poster--revised .tier-band::after {
+  pointer-events: none;
+}
+
+.infographic-poster--revised .tier-band--cyan::after {
+  background:
+    linear-gradient(90deg, rgba(var(--tier-glow), 0.56), transparent 9% 91%, rgba(var(--tier-glow), 0.34)),
+    linear-gradient(180deg, transparent 0 calc(100% - 0.14cqw), rgba(var(--tier-glow), 0.72) calc(100% - 0.14cqw)),
+    linear-gradient(315deg, var(--tier-spot) 0 1.45cqw, transparent 1.5cqw);
+}
+
+.infographic-poster--revised .tier-band--cyan .player-collage {
+  overflow: visible;
+  clip-path: inset(-11cqw -13cqw 0 -13cqw);
+}
+
+.infographic-poster--revised .tier-band--lime {
+  overflow: visible;
+  clip-path: inset(0 -10cqw 0 0);
+}
+
+.infographic-poster--revised .tier-band--lime .player-collage {
+  overflow: visible;
+  clip-path: inset(0 -10cqw 0 -1.2cqw);
+}
+
+.infographic-poster--revised .player-collage {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.36) 8%, transparent 22%),
+    radial-gradient(ellipse at 51% 82%, rgba(0, 0, 0, 0.72), transparent 48%),
+    radial-gradient(ellipse at 78% 19%, rgba(255, 255, 255, 0.18), transparent 20%),
+    linear-gradient(110deg, rgba(var(--accent-rgb), 0.14), transparent 39%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 0.055cqw, transparent 0.055cqw 2.35cqw),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(0, 0, 0, 0.25));
+}
+
 @media (max-width: 1100px) {
   .infographic-workbench {
     gap: 8px;
