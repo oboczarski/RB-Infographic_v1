@@ -343,7 +343,7 @@
 .player-list__row {
   position: relative;
   display: grid;
-  grid-template-columns: 6.3cqw minmax(0, 1fr);
+  grid-template-columns: 5.7cqw minmax(0, 1fr);
   align-items: center;
   min-width: 0;
   border-bottom: 0.08cqw solid rgba(255, 255, 255, 0.12);
@@ -442,7 +442,7 @@
 }
 
 .tier-band--magenta .player-list__row {
-  grid-template-columns: 5.55cqw minmax(0, 1fr);
+  grid-template-columns: 5.25cqw minmax(0, 1fr);
 }
 
 .tier-band--magenta .player-list__logo-wrap {
