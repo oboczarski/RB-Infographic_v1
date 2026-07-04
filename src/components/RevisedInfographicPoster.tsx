@@ -34,7 +34,7 @@ export function RevisedInfographicPoster() {
             aria-label="Dynasty Hub RB tiers 1 through 5"
           >
             <span />
-            <strong>DYNASTY HUB • RB TIERS 1-5</strong>
+            <strong>Dynasty Hub   •    Running Back   •    Tiers 1-5</strong>
             <span />
           </div>
         </div>
