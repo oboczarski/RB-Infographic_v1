@@ -2186,6 +2186,27 @@
   height: 70%;
 }
 
+/* Trial: revised logos without circular wells. */
+.infographic-poster--revised .player-list__logo-wrap {
+  border: 0;
+  border-radius: 0;
+  clip-path: none;
+  overflow: visible;
+  background: transparent;
+  box-shadow: none;
+  filter:
+    drop-shadow(0 0 0.45cqw rgba(255, 255, 255, 0.24))
+    drop-shadow(0 0 0.9cqw rgba(0, 0, 0, 0.82));
+}
+
+.infographic-poster--revised .player-list__logo {
+  width: 82%;
+  height: 82%;
+  filter:
+    drop-shadow(0 0 0.18cqw rgba(255, 255, 255, 0.32))
+    drop-shadow(0 0.18cqw 0.2cqw rgba(0, 0, 0, 0.72));
+}
+
 .infographic-poster--revised .tier-band::after {
   pointer-events: none;
 }
