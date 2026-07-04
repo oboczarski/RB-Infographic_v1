@@ -39,6 +39,7 @@ export function InfographicPoster() {
             tier={tier}
             active={activeTier === tier.id}
             onActivate={setActiveTier}
+            posterVersion="original"
           />
         ))}
       </div>

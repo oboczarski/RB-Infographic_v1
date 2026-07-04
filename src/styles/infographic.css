@@ -436,6 +436,96 @@
     0 0 0.78cqw rgba(255, 255, 255, 0.28);
 }
 
+.infographic-poster:not(.infographic-poster--revised) .player-list__name--original-trend-achane {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.52cqw;
+}
+
+.infographic-poster:not(.infographic-poster--revised) .original-player-trend-icon--achane {
+  flex: 0 0 auto;
+  width: 2.56cqw;
+  height: 2.56cqw;
+  fill: #10f4d6;
+  transform: translateY(-0.04cqw);
+  filter: drop-shadow(0 0 0.42cqw rgba(16, 244, 214, 0.56));
+}
+
+.infographic-poster:not(.infographic-poster--revised) .player-list__name--original-trend-judkins {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.44cqw;
+}
+
+.infographic-poster:not(.infographic-poster--revised) .original-player-trend-icon--judkins {
+  flex: 0 0 auto;
+  width: 2.24cqw;
+  height: 2.24cqw;
+  fill: #10f4d6;
+  transform: translateY(-0.03cqw);
+  filter: drop-shadow(0 0 0.36cqw rgba(16, 244, 214, 0.54));
+}
+
+.infographic-poster:not(.infographic-poster--revised) .player-list__name--original-trend-skattebo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32cqw;
+}
+
+.infographic-poster:not(.infographic-poster--revised) .original-player-trend-icon--skattebo {
+  flex: 0 0 auto;
+  width: 1.72cqw;
+  height: 1.72cqw;
+  fill: #10f4d6;
+  transform: translateY(-0.02cqw);
+  filter: drop-shadow(0 0 0.28cqw rgba(16, 244, 214, 0.52));
+}
+
+.infographic-poster--revised .player-list__name--revised-trend-achane {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.58cqw;
+}
+
+.infographic-poster--revised .revised-player-trend-icon--achane {
+  flex: 0 0 auto;
+  width: 2.68cqw;
+  height: 2.68cqw;
+  fill: #10f4d6;
+  transform: translateY(-0.05cqw);
+  filter: drop-shadow(0 0 0.48cqw rgba(16, 244, 214, 0.6));
+}
+
+.infographic-poster--revised .player-list__name--revised-trend-judkins {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.48cqw;
+}
+
+.infographic-poster--revised .revised-player-trend-icon--judkins {
+  flex: 0 0 auto;
+  width: 2.34cqw;
+  height: 2.34cqw;
+  fill: #10f4d6;
+  transform: translateY(-0.04cqw);
+  filter: drop-shadow(0 0 0.4cqw rgba(16, 244, 214, 0.58));
+}
+
+.infographic-poster--revised .player-list__name--revised-trend-skattebo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.36cqw;
+}
+
+.infographic-poster--revised .revised-player-trend-icon--skattebo {
+  flex: 0 0 auto;
+  width: 1.86cqw;
+  height: 1.86cqw;
+  fill: #10f4d6;
+  transform: translateY(-0.02cqw);
+  filter: drop-shadow(0 0 0.32cqw rgba(16, 244, 214, 0.56));
+}
+
 .tier-band--magenta .player-list {
   padding-top: 0.68cqw;
   padding-bottom: 0.7cqw;

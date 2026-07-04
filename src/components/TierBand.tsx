@@ -5,16 +5,22 @@ import {
   type TierId,
 } from "../data/tierList";
 import { PlayerCollage } from "./PlayerCollage";
-import { PlayerNameList } from "./PlayerNameList";
+import { PlayerNameList, type PosterVersion } from "./PlayerNameList";
 import { TierRail } from "./TierRail";
 
 type TierBandProps = {
   tier: TierDefinition;
   active: boolean;
   onActivate: (tier: TierId) => void;
+  posterVersion: PosterVersion;
 };
 
-export function TierBand({ tier, active, onActivate }: TierBandProps) {
+export function TierBand({
+  tier,
+  active,
+  onActivate,
+  posterVersion,
+}: TierBandProps) {
   const tierPlayers = playersForTier(tier.id);
 
   function handleKeyDown(event: KeyboardEvent<HTMLElement>) {
@@ -43,7 +49,7 @@ export function TierBand({ tier, active, onActivate }: TierBandProps) {
       onKeyDown={handleKeyDown}
     >
       <TierRail tier={tier} />
-      <PlayerNameList players={tierPlayers} />
+      <PlayerNameList players={tierPlayers} posterVersion={posterVersion} />
       <PlayerCollage players={tierPlayers} />
     </section>
   );
