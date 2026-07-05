@@ -439,91 +439,91 @@
 .infographic-poster:not(.infographic-poster--revised) .player-list__name--original-trend-achane {
   display: inline-flex;
   align-items: center;
-  gap: 0.52cqw;
+  gap: 0.56cqw;
 }
 
 .infographic-poster:not(.infographic-poster--revised) .original-player-trend-icon--achane {
   flex: 0 0 auto;
-  width: 2.56cqw;
-  height: 2.56cqw;
+  width: 3.06cqw;
+  height: 3.06cqw;
   fill: #10f4d6;
   transform: translateY(-0.04cqw);
-  filter: drop-shadow(0 0 0.42cqw rgba(16, 244, 214, 0.56));
+  filter: drop-shadow(0 0 0.22cqw rgba(16, 244, 214, 0.36));
 }
 
 .infographic-poster:not(.infographic-poster--revised) .player-list__name--original-trend-judkins {
   display: inline-flex;
   align-items: center;
-  gap: 0.44cqw;
+  gap: 0.48cqw;
 }
 
 .infographic-poster:not(.infographic-poster--revised) .original-player-trend-icon--judkins {
   flex: 0 0 auto;
-  width: 2.24cqw;
-  height: 2.24cqw;
+  width: 2.72cqw;
+  height: 2.72cqw;
   fill: #10f4d6;
   transform: translateY(-0.03cqw);
-  filter: drop-shadow(0 0 0.36cqw rgba(16, 244, 214, 0.54));
+  filter: drop-shadow(0 0 0.2cqw rgba(16, 244, 214, 0.35));
 }
 
 .infographic-poster:not(.infographic-poster--revised) .player-list__name--original-trend-skattebo {
   display: inline-flex;
   align-items: center;
-  gap: 0.32cqw;
+  gap: 0.38cqw;
 }
 
 .infographic-poster:not(.infographic-poster--revised) .original-player-trend-icon--skattebo {
   flex: 0 0 auto;
-  width: 1.72cqw;
-  height: 1.72cqw;
+  width: 2.14cqw;
+  height: 2.14cqw;
   fill: #10f4d6;
   transform: translateY(-0.02cqw);
-  filter: drop-shadow(0 0 0.28cqw rgba(16, 244, 214, 0.52));
+  filter: drop-shadow(0 0 0.16cqw rgba(16, 244, 214, 0.34));
 }
 
 .infographic-poster--revised .player-list__name--revised-trend-achane {
   display: inline-flex;
   align-items: center;
-  gap: 0.58cqw;
+  gap: 0.62cqw;
 }
 
 .infographic-poster--revised .revised-player-trend-icon--achane {
   flex: 0 0 auto;
-  width: 2.68cqw;
-  height: 2.68cqw;
+  width: 3.18cqw;
+  height: 3.18cqw;
   fill: #10f4d6;
   transform: translateY(-0.05cqw);
-  filter: drop-shadow(0 0 0.48cqw rgba(16, 244, 214, 0.6));
+  filter: drop-shadow(0 0 0.24cqw rgba(16, 244, 214, 0.38));
 }
 
 .infographic-poster--revised .player-list__name--revised-trend-judkins {
   display: inline-flex;
   align-items: center;
-  gap: 0.48cqw;
+  gap: 0.52cqw;
 }
 
 .infographic-poster--revised .revised-player-trend-icon--judkins {
   flex: 0 0 auto;
-  width: 2.34cqw;
-  height: 2.34cqw;
+  width: 2.82cqw;
+  height: 2.82cqw;
   fill: #10f4d6;
   transform: translateY(-0.04cqw);
-  filter: drop-shadow(0 0 0.4cqw rgba(16, 244, 214, 0.58));
+  filter: drop-shadow(0 0 0.22cqw rgba(16, 244, 214, 0.37));
 }
 
 .infographic-poster--revised .player-list__name--revised-trend-skattebo {
   display: inline-flex;
   align-items: center;
-  gap: 0.36cqw;
+  gap: 0.42cqw;
 }
 
 .infographic-poster--revised .revised-player-trend-icon--skattebo {
   flex: 0 0 auto;
-  width: 1.86cqw;
-  height: 1.86cqw;
+  width: 2.28cqw;
+  height: 2.28cqw;
   fill: #10f4d6;
   transform: translateY(-0.02cqw);
-  filter: drop-shadow(0 0 0.32cqw rgba(16, 244, 214, 0.56));
+  filter: drop-shadow(0 0 0.18cqw rgba(16, 244, 214, 0.36));
 }
 
 .tier-band--magenta .player-list {
@@ -1895,14 +1895,14 @@
   background:
     linear-gradient(90deg, rgba(13, 255, 240, 0.08), rgba(255, 255, 255, 0.055) 18%, rgba(1, 9, 12, 0.78) 50%, rgba(78, 151, 255, 0.08));
   clip-path: polygon(1cqw 0, calc(100% - 1cqw) 0, 100% 50%, calc(100% - 1cqw) 100%, 1cqw 100%, 0 50%);
-  color: #9DC4C0;
+  color: #fff;
   font-family: "Bruno Ace SC", Tourney, "Barlow Condensed", Impact, sans-serif;
   font-size: 1.95cqw;
   font-weight: 400;
   letter-spacing: 0.56cqw;
   text-shadow:
-    1px 1px 0px rgba(34, 255, 241, 0.99),
-    0 0.12cqw 0 rgba(0, 0, 0, 0.95), 
+    2px 2px 0px rgba(34, 255, 241, 0.99), 
+    3px 3px 0 rgba(0, 0, 0, 0.95), 
     1px 1px 0px rgba(34, 255, 241, 0.99);
   box-shadow:
     inset 0 0 0.62cqw rgba(31, 255, 241, 0.08),
@@ -2154,7 +2154,7 @@
   letter-spacing: 0;
   color: transparent;
   background:
-    linear-gradient(180deg, #f4ffff 0%, #83fff6 22%, #2fc8ff 43%, #eefcff 50%, #6c83ff 68%, #273764 100%);
+  linear-gradient(180deg, #a470ff 0%, #4063ff 25%, #7439ffb3 39%, #4867ae4d 55%, #6e75f700 75%, #1250ff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2164,7 +2164,7 @@
     0.18cqw 0.18cqw 0 rgba(0, 0, 0, 0.74),
     0 0 0.95cqw rgba(42, 231, 255, 0.28),
     0 0 2cqw rgba(105, 111, 255, 0.16);
-  filter: none;
+  filter: brightness(1) saturate(1.2) hue-rotate(3deg) drop-shadow(-1px -1px 4px #43f) drop-shadow(1px 0px 20px #43f0) drop-shadow(-34px 23px 54px #43f8) drop-shadow(-1px -1px 0px #fff4);
 }
 
 .infographic-poster--revised .poster-title__main::after {
@@ -2174,16 +2174,17 @@
 .infographic-poster--revised .poster-subtitle {
   display: block;
   width: max-content;
-  margin: -7px -7px 0 65px;
+  margin: 5px -100px 0 5px;
   padding: 0;
   border: 0;
   background: none;
   clip-path: none;
   box-shadow: none;
-  font-family: 'museomoderno', Tourney, "Barlow Condensed", Impact, sans-serif;
-  font-size: 37px;
-  letter-spacing: -0.15rem;
+  font-family: 'bruno ace sc', 'museomoderno', "Barlow Condensed", Impact, sans-serif;
+  font-size: 32px;
+  letter-spacing: -0.08rem;
   font-weight: 300;
+  -webkit-text-stroke: 1px #0000006b;
 }
 
 .infographic-poster--revised .poster-subtitle span {
