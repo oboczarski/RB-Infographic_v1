@@ -1,19 +1,13 @@
 .infographic-poster {
   container-type: inline-size;
   position: relative;
-  width: min(1024px, 100vw);
-  aspect-ratio: 2 / 3;
+  width: min(1000px, 100vw);
+  aspect-ratio: 2.2 / 3;
   overflow: hidden;
   isolation: isolate;
-  background:
-    radial-gradient(ellipse at 50% -8%, rgba(16, 244, 240, 0.24), transparent 30%),
-    radial-gradient(ellipse at 108% 36%, rgba(18, 150, 255, 0.2), transparent 28%),
-    linear-gradient(180deg, #020506 0%, #05090b 41%, #030507 100%);
+  background: radial-gradient(ellipse at 50% -8%, rgba(16, 244, 240, 0.24), transparent 30%), radial-gradient(ellipse at 108% 36%, rgba(18, 150, 255, 0.2), transparent 28%), linear-gradient(180deg, #020506 0%, #05090b 41%, #030507 100%);
   border: 1px solid rgba(65, 255, 246, 0.42);
-  box-shadow:
-    0 36px 100px rgba(0, 0, 0, 0.75),
-    0 0 64px rgba(16, 244, 240, 0.18),
-    inset 0 0 90px rgba(255, 255, 255, 0.035);
+  box-shadow: 0 36px 100px rgba(0, 0, 0, 0.75), 0 0 64px rgba(16, 244, 240, 0.18), inset 0 0 90px rgba(255, 255, 255, 0.035);
 }
 
 .infographic-poster::before,
@@ -168,23 +162,16 @@
   --accent-rgb: 16, 244, 240;
   position: relative;
   display: grid;
-  grid-template-columns: 19.1cqw 29.2cqw minmax(0, 1fr);
+  grid-template-columns: 19.1cqw 30cqw minmax(0, 1fr);
   min-height: 0;
   overflow: hidden;
   border: 0;
   border-top: 0.1cqw solid rgba(var(--accent-rgb), 0.9);
   border-bottom: 0.1cqw solid rgba(var(--accent-rgb), 0.55);
-  background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.95) 0 19.1cqw, rgba(1, 7, 8, 0.76) 19.1cqw 48.3cqw, transparent 48.3cqw),
-    radial-gradient(ellipse at 76% 48%, rgba(var(--accent-rgb), 0.32), transparent 43%),
-    linear-gradient(115deg, rgba(var(--accent-rgb), 0.18), transparent 44%),
-    #020607;
+  background: transparent;
   color: #fff;
   cursor: pointer;
-  transition:
-    filter 180ms ease,
-    transform 180ms ease,
-    box-shadow 180ms ease;
+  transition: filter 180ms ease, transform 180ms ease, box-shadow 180ms ease;
 }
 
 .tier-band--cyan {
@@ -245,11 +232,7 @@
 .tier-band--lime {
   margin-top: 0.12cqw;
   margin-bottom: 0.24cqw;
-  background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.95) 0 19.1cqw, rgba(2, 9, 15, 0.75) 19.1cqw 48.3cqw, transparent 48.3cqw),
-    radial-gradient(ellipse at 76% 48%, rgba(var(--accent-rgb), 0.31), transparent 43%),
-    linear-gradient(115deg, rgba(var(--accent-rgb), 0.18), transparent 44%),
-    #02070c;
+  background: transparent;
 }
 
 .tier-band--blue {
@@ -261,16 +244,14 @@
 }
 
 .tier-band--violet {
-  background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.95) 0 19.1cqw, rgba(8, 6, 17, 0.75) 19.1cqw 48.3cqw, transparent 48.3cqw),
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.95) 0 19.1cqw, rgba(8, 6, 17, 0.75) 19.1cqw 34.3cqw, transparent 48.3cqw),
     radial-gradient(ellipse at 76% 49%, rgba(var(--accent-rgb), 0.29), transparent 43%),
     linear-gradient(115deg, rgba(var(--accent-rgb), 0.18), transparent 44%),
     #05040b;
 }
 
 .tier-band--magenta {
-  background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.96) 0 19.1cqw, rgba(17, 3, 10, 0.76) 19.1cqw 48.3cqw, transparent 48.3cqw),
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.96) 0 19.1cqw, rgba(17, 3, 10, 0.76) 19.1cqw 32.3cqw, transparent 46.3cqw),
     radial-gradient(ellipse at 76% 48%, rgba(var(--accent-rgb), 0.31), transparent 45%),
     linear-gradient(115deg, rgba(var(--accent-rgb), 0.18), transparent 44%),
     #070207;
@@ -335,11 +316,10 @@
   grid-template-rows: repeat(var(--player-count), minmax(0, 1fr));
   align-items: stretch;
   margin: 0;
-  padding: 1.2cqw 0.9cqw 1.2cqw 1.35cqw;
+  padding: 0.6cqw 0.9cqw 0.2cqw 1.35cqw;
   list-style: none;
-  background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.02)),
-    linear-gradient(180deg, transparent, rgba(var(--accent-rgb), 0.04), transparent);
+  background: transparent;
+  min-width: 309px;
 }
 
 .player-list__row {
@@ -421,24 +401,27 @@
 }
 
 .tier-band--blue .player-list__name {
-  font-size: 1.9cqw;
+  font-size: 2cqw;
+  text-shadow: 1px 1px 0px #007dff, 0px 0px 15px #0072ff59;
 }
 
 .tier-band--violet .player-list__name {
-  font-size: 1.98cqw;
+  font-size: 1.85cqw;
+  text-shadow: 1px 1px 0px #6931ff, 0px 0px 15px #9e31ff00;
 }
 
 .player-list__name {
   min-width: 0;
-  color: #fff;
+  color: #e3e7ee;
   font-family: 'Bruno Ace SC', "Google Sans", Inter, system-ui, sans-serif;
   font-size: 2cqw;
   font-weight: 700;
   line-height: 1;
   white-space: nowrap;
   overflow: visible;
-    letter-spacing: -0.05rem;
-    -webkit-text-stroke: 1px;
+  letter-spacing: -0.05rem;
+  -webkit-text-stroke: 0px;
+  text-shadow: 1px 1px 0px #31ecff, 0px 0px 15px #31ecff99;
 }
 
 .infographic-poster:not(.infographic-poster--revised) .player-list__name--original-trend-achane {
@@ -550,10 +533,8 @@
 }
 
 .player-collage {
-  overflow: hidden;
-  background:
-    radial-gradient(ellipse at 52% 80%, rgba(0, 0, 0, 0.58), transparent 48%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.15));
+    overflow: hidden;
+    background: transparent;
 }
 
 .player-collage::before {
