@@ -125,18 +125,22 @@
   }
 
 .poster-subtitle {
-     display: grid;
+    display: grid;
     grid-template-columns: 10.2cqw max-content 10.2cqw;
     gap: 3.9cqw;
     align-items: center;
     width: fit-content;
-    margin: 1.45cqw 0 0 3.4cqw;
-    color: #18f6ef;
-    font-family: Tourney, "Barlow Condensed", Impact, sans-serif;
-    font-size: 2.55cqw;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.9cqw;
+    margin: 0.85cqw 0 0 5.4cqw;
+    color: #ffffff;
+    font-family: 'Bruno Ace SC';
+    font-size: 3.25cqw;
+    font-weight: 300 !important;
+    letter-spacing: 0.1cqw;
+    -webkit-text-stroke: 0px;
+    text-shadow: 2px 2px 0px rgba(34, 255, 241, 0.99), 3px 3px 0 rgba(0, 0, 0, 0.95), 1px 1px 0px rgba(34, 255, 241, 0.99);
+    letter-spacing: -0.08rem;
+    font-weight: 300;
+    -webkit-text-stroke: 1px #0000006b;
 }
 
 .poster-subtitle span {
@@ -355,13 +359,12 @@
 }
 
 .player-list__logo-wrap {
-  width: 4.4cqw;
-  height: 4.4cqw;
-  display: grid;
-  place-items: center;
-  filter:
-    drop-shadow(0 0 0.5cqw rgba(255, 255, 255, 0.32))
-    drop-shadow(0 0 1cqw rgba(0, 0, 0, 0.85));
+    width: 4.8cqw;
+    height: 4.8cqw;
+    display: grid;
+    place-items: center;
+    margin-left: -1px;
+    filter: drop-shadow(0 0 0.5cqw rgba(255, 255, 255, 0.32)) drop-shadow(0 0 1cqw rgba(0, 0, 0, 0.85)) saturate(1.1) brightness(1.2);
 }
 
 .player-list__logo {
@@ -376,52 +379,52 @@
 }
 
 .tier-band--cyan .player-list__logo-wrap {
-  width: 5.5cqw;
-  height: 5.5cqw;
+    width: 5.8cqw;
+    height: 5.8cqw;
+    margin-left: -4px;
 }
-
 .tier-band--cyan .player-list__name {
-    font-size: 2.48cqw;
+    font-size: 3.38cqw;
     font-weight: 300;
     letter-spacing: -0.03rem;
-    -webkit-text-stroke: 1px;
+    -webkit-text-stroke: 0px;
     z-index: 4;
     padding: 10px 0;
     overflow: visible;
-    text-shadow: 1px 1px 0px #00ffff, 0px 0px 15px #00ffff;
+    text-shadow: 2px 2px 0px #00ffff;
 }
 
 .tier-band--blue .player-list__logo-wrap {
-  width: 4.15cqw;
-  height: 4.15cqw;
+    width: 4.55cqw;
+    height: 4.55cqw;
 }
 .tier-band--violet .player-list__logo-wrap {
-  width: 4.7cqw;
-  height: 4.7cqw;
+    width: 4.5cqw;
+    height: 4.5cqw;
 }
 
 .tier-band--blue .player-list__name {
-  font-size: 2cqw;
-  text-shadow: 1px 1px 0px #007dff, 0px 0px 15px #0072ff59;
+    font-size: 2.7cqw;
+    text-shadow: 1px 1px 0px #007dff, 0px 0px 15px #0072ff59;
 }
 
 .tier-band--violet .player-list__name {
-  font-size: 1.85cqw;
-  text-shadow: 1px 1px 0px #6931ff, 0px 0px 15px #9e31ff00;
+    font-size: 2.5cqw;
+    text-shadow: 1px 1px 0px #3140ff, 0px 0px 15px #3e31ff5e;
 }
 
 .player-list__name {
-  min-width: 0;
-  color: #e3e7ee;
-  font-family: 'Bruno Ace SC', "Google Sans", Inter, system-ui, sans-serif;
-  font-size: 2cqw;
-  font-weight: 700;
-  line-height: 1;
-  white-space: nowrap;
-  overflow: visible;
-  letter-spacing: -0.05rem;
-  -webkit-text-stroke: 0px;
-  text-shadow: 1px 1px 0px #31ecff, 0px 0px 15px #31ecff99;
+    min-width: 0;
+    color: #e3e7ee;
+    font-family: 'Bruno Ace SC', "Google Sans", Inter, system-ui, sans-serif;
+    font-size: 2.8cqw;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: visible;
+    letter-spacing: -0.05rem;
+    -webkit-text-stroke: 0px;
+    text-shadow: 1px 1px 0px #31ecff, 0px 0px 15px #31ecff99;
 }
 
 .infographic-poster:not(.infographic-poster--revised) .player-list__name--original-trend-achane {
@@ -515,8 +518,9 @@
 }
 
 .tier-band--magenta .player-list {
-  padding-top: 0.68cqw;
-  padding-bottom: 0.7cqw;
+    padding-top: 0.3cqw;
+    padding-bottom: 0.1cqw;
+    gap: 0px;
 }
 
 .tier-band--magenta .player-list__row {
@@ -529,7 +533,8 @@
 }
 
 .tier-band--magenta .player-list__name {
-  font-size: 1.68cqw;
+    font-size: 2.2cqw;
+    text-shadow: 1px 1px 0px #9931ff, 0px 0px 15px #aa31ff40;
 }
 
 .player-collage {

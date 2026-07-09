@@ -31,10 +31,10 @@ export function RevisedInfographicPoster() {
           </h1>
           <div
             className="poster-subtitle"
-            aria-label="Dynasty Hub RB tiers 1 through 5"
+            aria-label="Dynasty Hub RB Tiers 1-5"
           >
             <span />
-            <strong>Dynasty Hub   •    Running Back   •    Tiers 1-5</strong>
+            <strong>Dynasty Hub  •   RB Tiers 1-5</strong>
             <span />
           </div>
         </div>
