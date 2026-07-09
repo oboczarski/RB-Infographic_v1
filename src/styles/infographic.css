@@ -301,18 +301,19 @@
 }
 
 .tier-rail__label {
-  display: grid;
-  gap: 0.15cqw;
-  margin-top: 1.6cqw;
-  font-family: "Google Sans", Inter, system-ui, sans-serif;
-  font-size: 2.45cqw;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.04;
-  color: var(--accent);
-  letter-spacing: 0.1cqw;
-  text-shadow: 0 0 1.6cqw rgba(var(--accent-rgb), 0.45);
-  justify-items: center;
+    display: grid;
+    gap: 0.15cqw;
+    margin-top: 1.1cqw;
+    font-family: 'Audiowide';
+    font-size: 2.75cqw;
+    font-style: inherit;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff22;
+    letter-spacing: 0cqw;
+    text-shadow: -2px -2px 0px rgba(var(--accent-rgb), 0.95);
+    justify-items: center;
+    -webkit-text-stroke: 1px var(--accent);
 }
 
 .player-list {
@@ -384,14 +385,14 @@
     margin-left: -4px;
 }
 .tier-band--cyan .player-list__name {
-    font-size: 3.38cqw;
+    font-size: 4cqw;
     font-weight: 300;
-    letter-spacing: -0.03rem;
-    -webkit-text-stroke: 0px;
+    letter-spacing: -0.07rem;
+    -webkit-text-stroke: 1px #0000006b;
     z-index: 4;
     padding: 10px 0;
     overflow: visible;
-    text-shadow: 2px 2px 0px #00ffff;
+    text-shadow: 2px 2px 0px #22ffcffc, 3px 3px 0 rgba(0, 0, 0, 0.95), 3px 3px 4px rgb(34 255 227 / 99%);
 }
 
 .tier-band--blue .player-list__logo-wrap {
@@ -404,72 +405,72 @@
 }
 
 .tier-band--blue .player-list__name {
-    font-size: 2.7cqw;
-    text-shadow: 1px 1px 0px #007dff, 0px 0px 15px #0072ff59;
+    font-size: 3.1cqw;
+    text-shadow: 2px 2px 0px #007dff, 3px 3px 0 rgba(0, 0, 0, 0.95), 3px 3px 4px rgb(34 224 255 / 99%);
 }
 
 .tier-band--violet .player-list__name {
-    font-size: 2.5cqw;
-    text-shadow: 1px 1px 0px #3140ff, 0px 0px 15px #3e31ff5e;
+    font-size: 2.9cqw;
+    text-shadow: 2px 2px 0px #3140ff, 3px 3px 0 rgba(0, 0, 0, 0.95), 3px 3px 4px rgb(34 176 255 / 99%);
 }
 
 .player-list__name {
     min-width: 0;
     color: #e3e7ee;
     font-family: 'Bruno Ace SC', "Google Sans", Inter, system-ui, sans-serif;
-    font-size: 2.8cqw;
+    font-size: 3.1cqw;
     font-weight: 700;
     line-height: 1;
     white-space: nowrap;
     overflow: visible;
-    letter-spacing: -0.05rem;
-    -webkit-text-stroke: 0px;
-    text-shadow: 1px 1px 0px #31ecff, 0px 0px 15px #31ecff99;
+    letter-spacing: -0.07rem;
+    -webkit-text-stroke: 1px #0000006b;
+    text-shadow: 2px 2px 0px #22effffc, 3px 3px 0 rgba(0, 0, 0, 0.95), 3px 3px 4px rgb(34 224 255 / 99%);
 }
 
 .infographic-poster:not(.infographic-poster--revised) .player-list__name--original-trend-achane {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.56cqw;
+    display: inline-flex;
+    align-items: center;
+    gap: 1cqw;
 }
 
 .infographic-poster:not(.infographic-poster--revised) .original-player-trend-icon--achane {
-  flex: 0 0 auto;
-  width: 3.06cqw;
-  height: 3.06cqw;
-  fill: #10f4d6;
-  transform: translateY(-0.04cqw);
-  filter: drop-shadow(0 0 0.22cqw rgba(16, 244, 214, 0.36));
+    flex: 0 0 auto;
+    width: 4.56cqw;
+    height: 4.56cqw;
+    fill: #10f4d6;
+    transform: translateY(-0.04cqw);
+    filter: drop-shadow(0px 0px 4px rgba(16, 244, 214, 0.36)) drop-shadow(0px 0px 13px rgba(16, 244, 214, 0.56));
 }
 
 .infographic-poster:not(.infographic-poster--revised) .player-list__name--original-trend-judkins {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.48cqw;
+    display: inline-flex;
+    align-items: center;
+    gap: 1cqw;
 }
 
 .infographic-poster:not(.infographic-poster--revised) .original-player-trend-icon--judkins {
-  flex: 0 0 auto;
-  width: 2.72cqw;
-  height: 2.72cqw;
-  fill: #10f4d6;
-  transform: translateY(-0.03cqw);
-  filter: drop-shadow(0 0 0.2cqw rgba(16, 244, 214, 0.35));
+    flex: 0 0 auto;
+    width: 4.32cqw;
+    height: 4.32cqw;
+    fill: #10f4d6;
+    transform: translateY(-0.03cqw);
+    filter: drop-shadow(0px 0px 4px rgba(16, 244, 214, 0.3)) drop-shadow(0px 0px 13px rgba(16, 244, 214, 0.5));
 }
 
 .infographic-poster:not(.infographic-poster--revised) .player-list__name--original-trend-skattebo {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.38cqw;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7cqw;
 }
 
 .infographic-poster:not(.infographic-poster--revised) .original-player-trend-icon--skattebo {
-  flex: 0 0 auto;
-  width: 2.14cqw;
-  height: 2.14cqw;
-  fill: #10f4d6;
-  transform: translateY(-0.02cqw);
-  filter: drop-shadow(0 0 0.16cqw rgba(16, 244, 214, 0.34));
+    flex: 0 0 auto;
+    width: 3.64cqw;
+    height: 3.64cqw;
+    fill: #10f4d6;
+    transform: translateY(-0.02cqw);
+    filter: drop-shadow(0px 0px 4px rgba(16, 244, 214, 0.3)) drop-shadow(0px 0px 13px rgba(16, 244, 214, 0.5));
 }
 
 .infographic-poster--revised .player-list__name--revised-trend-achane {
@@ -533,8 +534,8 @@
 }
 
 .tier-band--magenta .player-list__name {
-    font-size: 2.2cqw;
-    text-shadow: 1px 1px 0px #9931ff, 0px 0px 15px #aa31ff40;
+    font-size: 2.6cqw;
+    text-shadow: 2px 2px 0px #b872fd, 3px 3px 0 rgba(0, 0, 0, 0.95), 3px 3px 4px rgb(169 100 255 / 09%);
 }
 
 .player-collage {
