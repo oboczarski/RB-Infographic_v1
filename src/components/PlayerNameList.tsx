@@ -10,6 +10,28 @@ type PlayerNameListProps = {
 
 type TrendIconPlayer = "achane" | "judkins" | "skattebo";
 
+export function formatPlayerDisplayName(name: string): string {
+  const trimmedName = name.trim();
+  const parts = trimmedName.split(/\s+/);
+
+  if (parts.length < 2) {
+    return trimmedName;
+  }
+
+  const firstInitial = parts[0].charAt(0).toUpperCase();
+  const lastToken = parts[parts.length - 1];
+  const normalizedLastToken = lastToken.replace(/[.,]/g, "");
+  const suffixPattern = /^(jr|sr|i|ii|iii|iv|v|vi|vii|viii|ix|x)$/i;
+
+  if (parts.length >= 3 && suffixPattern.test(normalizedLastToken)) {
+    const lastName = parts[parts.length - 2];
+    return `${firstInitial}. ${lastName} ${lastToken}`;
+  }
+
+  const lastName = lastToken;
+  return `${firstInitial}. ${lastName}`;
+}
+
 const trendIconPlayerByName: Partial<Record<Player["name"], TrendIconPlayer>> = {
   "De'Von Achane": "achane",
   "Quinshon Judkins": "judkins",
@@ -79,7 +101,7 @@ export function PlayerNameList({ players, posterVersion }: PlayerNameListProps) 
                   : "player-list__name"
               }
             >
-              {player.name}
+              {formatPlayerDisplayName(player.name)}
               {trendIconPlayer ? (
                 <MaterialTrendIcon
                   player={trendIconPlayer}

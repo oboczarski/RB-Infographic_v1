@@ -3,8 +3,15 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { brandLogoAsset, playerImageAssets, teamLogoAssets } from "../data/assetMap";
 import { players, tierDefinitions } from "../data/tierList";
+import { formatPlayerDisplayName } from "../components/PlayerNameList";
 
 describe("RB tier list data", () => {
+  it("formats player names as first initial plus last name", () => {
+    expect(formatPlayerDisplayName("De'Von Achane")).toBe("D. Achane");
+    expect(formatPlayerDisplayName("Cam Skattebo")).toBe("C. Skattebo");
+    expect(formatPlayerDisplayName("John Smith III")).toBe("J. Smith III");
+  });
+
   it("contains the complete 18-player rank order", () => {
     expect(players).toHaveLength(18);
     expect(players.map((player) => player.rank)).toEqual(
